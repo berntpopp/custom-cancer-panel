@@ -397,7 +397,7 @@ natera_hereditary_cancer_test_comprehensive_genes <- natera_hereditary_cancer_te
   mutate(hgnc_id = hgnc_id_from_symbol_grouped(Genes)) %>%
   mutate(approved_symbol = symbol_from_hgnc_id_grouped(hgnc_id)) %>%
   select(approved_symbol, hgnc_id, gene_name_reported = Genes, source = Source, panel = Panel)
-  
+
 ############################################
 
 
@@ -406,20 +406,20 @@ natera_hereditary_cancer_test_comprehensive_genes <- natera_hereditary_cancer_te
 ## compute count of panels a gene is reported in
 ## compute diagnostic panel evidence as genes reported in at least 2 panel sources
 all_diagnostic_panels_genes <- bind_rows(blueprintgenetics_hereditary_cancer_genes,
-	centogene_solid_tumor_panel_genes,
-	fulgentgenetics_comprehensivecancer_full_genes,
-	cegat_tumor_syndromes_panel_genes,
-	invitae_tumor_syndromes_panel_genes,
-	mgz_erbliche_tumorerkrankungen_umfassende_diagnostik_genes,
-	uchicago_comprehensive_hereditary_cancer_panel_genes,
-	preventiongenetics_cancer_panel_genes,
-	mayocliniclabs_xcp_hereditary_expanded_cancer_panel_genes,
-	myriadgenetics_myrisk_panel_genes,
-	genedx_oncogenedx_custom_panel_genes,
-	arupconsult_hereditary_cancer_panel_genes,
-	cancergeneticslab_hereditary_cancer_panel_genes,
-	neogenomics_full_comprehensive_cancer_panel_germline_genes,
-	natera_hereditary_cancer_test_comprehensive_genes) %>%
+  centogene_solid_tumor_panel_genes,
+  fulgentgenetics_comprehensivecancer_full_genes,
+  cegat_tumor_syndromes_panel_genes,
+  invitae_tumor_syndromes_panel_genes,
+  mgz_erbliche_tumorerkrankungen_umfassende_diagnostik_genes,
+  uchicago_comprehensive_hereditary_cancer_panel_genes,
+  preventiongenetics_cancer_panel_genes,
+  mayocliniclabs_xcp_hereditary_expanded_cancer_panel_genes,
+  myriadgenetics_myrisk_panel_genes,
+  genedx_oncogenedx_custom_panel_genes,
+  arupconsult_hereditary_cancer_panel_genes,
+  cancergeneticslab_hereditary_cancer_panel_genes,
+  neogenomics_full_comprehensive_cancer_panel_germline_genes,
+  natera_hereditary_cancer_test_comprehensive_genes) %>%
   group_by(approved_symbol) %>%
   summarise(panel_diagnostic = paste(unique(panel), collapse = "; "),
     panel_diagnostic_count = n(),

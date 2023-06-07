@@ -4,7 +4,6 @@ library(tidyverse)  ##needed for general table operations
 library(jsonlite)  ##needed for HGNC requests
 library(rvest)    ##needed for scraping
 library(httr)    ##needed for scraping
-library(kableExtra)  ##needed to present scraped data
 library(config) # needed for config loading
 ############################################
 
