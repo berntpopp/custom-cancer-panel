@@ -1,0 +1,739 @@
+approved_symbol,hgnc_id,gene_name_reported,source,source_count,source_evidence
+A1CF,24086,A1CF,somatic: melanoma; germline: NA,2,FALSE
+ABI1,11320,ABI1,somatic: AML; germline: NA,3,FALSE
+ABL1,76,ABL1,"somatic: CML, ALL, T-ALL; germline: NA",4,TRUE
+ABL2,77,ABL2,somatic: AML; germline: NA,3,FALSE
+ACKR3,23692,ACKR3,somatic: lipoma; germline: NA,3,FALSE
+ACSL3,3570,ACSL3,somatic: prostate; germline: NA,3,FALSE
+ACSL6,16496,ACSL6,"somatic: AML, AEL; germline: NA",2,FALSE
+ACVR1,171,ACVR1,somatic: DIPG; germline: NA,3,FALSE
+ACVR1B,172,ACVR1B,somatic: pancreatic cancer; germline: NA,3,FALSE
+ACVR2A,173,ACVR2A,"somatic: large intestine carcinoma, stomach carcinoma, pancreatic carcinoma, biliary tract, oesophagus; germline: NA",3,FALSE
+AFDN,7137,AFDN,somatic: AL; germline: NA,3,FALSE
+AFF1,7135,AFF1,somatic: AL; germline: NA,3,FALSE
+AFF3,6473,AFF3,"somatic: ALL, T-ALL; germline: NA",3,FALSE
+AFF4,17869,AFF4,somatic: ALL; germline: NA,3,FALSE
+AKAP9,379,AKAP9,somatic: papillary thyroid; germline: NA,2,FALSE
+AKT1,391,AKT1,"somatic: breast, colorectal, ovarian, NSCLC; germline: NA",4,TRUE
+AKT2,392,AKT2,"somatic: ovarian, pancreatic; germline: NA",3,FALSE
+AKT3,393,AKT3,somatic: GBM; germline: NA,2,FALSE
+ALDH2,404,ALDH2,somatic: leiomyoma; germline: NA,2,FALSE
+ALK,427,ALK,"somatic: ALCL, NSCLC, neuroblastoma, inflammatory myofibroblastic tumour, Spitzoid tumour; germline: neuroblastoma",5,TRUE
+AMER1,26837,AMER1,somatic: Wilms tumour; germline: NA,4,TRUE
+ANK1,492,ANK1,somatic: CCRCC; germline: NA,2,FALSE
+APC,583,APC,"somatic: colorectal, pancreatic, desmoid, hepatoblastoma, glioma, other CNS; germline: colorectal, pancreatic, desmoid, hepatoblastoma, glioma, other CNS",5,TRUE
+APOBEC3B,17352,APOBEC3B,somatic: NA; germline: breast cancer,3,FALSE
+AR,644,AR,somatic: prostate; germline: NA,5,TRUE
+ARAF,646,ARAF,"somatic: cholangiocarcinoma, lung adenocarcinoma, Langerhans cell histiocytosis; germline: NA",2,FALSE
+ARHGAP26,17073,ARHGAP26,"somatic: AML, MDS; germline: NA",3,FALSE
+ARHGAP35,4591,ARHGAP35,somatic: endometrial carcinoma; germline: NA,3,FALSE
+ARHGAP5,675,ARHGAP5,"somatic: colon cancer, glioma; germline: NA",2,FALSE
+ARHGEF10,14103,ARHGEF10,somatic: colon cancer; germline: NA,2,FALSE
+ARHGEF10L,25540,ARHGEF10L,somatic: lymphoma; germline: NA,2,FALSE
+ARHGEF12,14193,ARHGEF12,somatic: AML; germline: NA,3,FALSE
+ARID1A,11110,ARID1A,"somatic: clear cell ovarian carcinoma, RCC, breast; germline: NA",4,TRUE
+ARID1B,18040,ARID1B,"somatic: breast, hepatocellular carcinoma, clear cell ovarian carcinoma; germline: NA",4,TRUE
+ARID2,18037,ARID2,somatic: hepatocellular carcinoma; germline: NA,4,TRUE
+ARNT,700,ARNT,somatic: AML; germline: NA,3,FALSE
+ASPM,19048,ASPM,"somatic: breast cancer, lung cancer, endometrial cancer, melanoma; germline: NA",3,FALSE
+ASPSCR1,13825,ASPSCR1,somatic: alveolar soft part sarcoma; germline: NA,3,FALSE
+ASXL1,18318,ASXL1,"somatic: MDS, CMML; germline: NA",4,TRUE
+ASXL2,23805,ASXL2,"somatic: melanoma, CCRCC, AML; germline: NA",2,FALSE
+ATF1,783,ATF1,"somatic: malignant melanoma of soft parts, angiomatoid fibrous histiocytoma; germline: NA",3,FALSE
+ATIC,794,ATIC,somatic: ALCL; germline: NA,3,FALSE
+ATM,795,ATM,"somatic: T-PLL; germline: leukaemia, lymphoma, medulloblastoma, glioma",5,TRUE
+ATP1A1,799,ATP1A1,somatic: adrenal aldosterone producing adenoma; germline: NA,3,FALSE
+ATP2B3,816,ATP2B3,somatic: adrenal aldosterone producing adenoma; germline: NA,3,FALSE
+ATR,882,ATR,"somatic: endometrial, gastric, epithelial ovarian, myeloma; germline: oropharyngeal",5,TRUE
+ATRX,886,ATRX,"somatic: pancreatic neuroendocrine tumours, paediatric GBM; germline: NA",4,TRUE
+AXIN1,903,AXIN1,"somatic: colorectal, endometrial, prostate, hepatocellular carcinoma, hepatoblastoma, sporadic medulloblastoma; germline: NA",4,TRUE
+AXIN2,904,AXIN2,"somatic: colorectal carcinoma, stomach carcinoma, hepatocellular carcinoma; germline: colorectal carcinoma",5,TRUE
+B2M,914,B2M,"somatic: DLBCL, melanoma, colorectal adenocarcinoma; germline: NA",3,FALSE
+BAP1,950,BAP1,"somatic: uveal melanoma, breast, NSCLC, RCC; germline: mesothelioma, skin and uveal melanoma, kidney cancer",5,TRUE
+BARD1,952,BARD1,"somatic: breast cancer; germline: ovarian cancer, breast cancer, endometrioid cancer",4,TRUE
+BAX,959,BAX,somatic: colorectal cancer; germline: NA,3,FALSE
+BAZ1A,960,BAZ1A,"somatic: uterine carcinosarcoma, colon cancer; germline: NA",2,FALSE
+BCL10,989,BCL10,somatic: MALT; germline: NA,3,FALSE
+BCL11A,13221,BCL11A,somatic: B-CLL; germline: NA,3,FALSE
+BCL11B,13222,BCL11B,somatic: T-ALL; germline: NA,3,FALSE
+BCL2,990,BCL2,"somatic: NHL, CLL; germline: NA",3,FALSE
+BCL2L12,13787,BCL2L12,"somatic: melanoma, SCC; germline: NA",2,FALSE
+BCL3,998,BCL3,somatic: CLL; germline: NA,3,FALSE
+BCL6,1001,BCL6,"somatic: NHL, CLL; germline: NA",3,FALSE
+BCL7A,1004,BCL7A,somatic: BNHL; germline: NA,3,FALSE
+BCL9,1008,BCL9,somatic: B-ALL; germline: NA,3,FALSE
+BCL9L,23688,BCL9L,"somatic: colorectal cancer, endometrial carcinoma, gastric cancer; germline: NA",3,FALSE
+BCLAF1,16863,BCLAF1,"somatic: melanoma, SCC; germline: NA",2,FALSE
+BCOR,20893,BCOR,"somatic: retinoblastoma, AML, APL (translocation); germline: NA",4,TRUE
+BCORL1,25657,BCORL1,"somatic: AML, HNSCC; germline: NA",3,FALSE
+BCR,1014,BCR,"somatic: CML, ALL, AML; germline: NA",3,FALSE
+BIRC3,591,BIRC3,"somatic: CLL, MALT, MCL, MM; germline: NA",3,FALSE
+BIRC6,13516,BIRC6,"somatic: melanoma, gastric adenocarcinoma, lung adenocarcinoma; germline: NA",2,FALSE
+BLM,1058,BLM,"somatic: NA; germline: leukaemia, lymphoma, skin squamous cell, other tumour types",3,FALSE
+BMP5,1072,BMP5,somatic: melanoma; germline: NA,2,FALSE
+BMPR1A,1076,BMPR1A,somatic: NA; germline: gastrointestinal polyps,3,FALSE
+BRAF,1097,BRAF,"somatic: melanoma, colorectal, papillary thyroid, borderline ovarian, NSCLC, cholangiocarcinoma, pilocytic astrocytoma, Spitzoid tumour, pancreas acinar carcinoma, melanocytic nevus, prostate, gastric; germline: NA",4,TRUE
+BRCA1,1100,BRCA1,"somatic: ovarian; germline: breast, ovarian",5,TRUE
+BRCA2,1101,BRCA2,"somatic: breast, ovarian, pancreatic; germline: breast, ovarian, pancreatic, leukaemia  (FANCB, FANCD1)",5,TRUE
+BRD3,1104,BRD3,somatic: lethal midline carcinoma of young people; germline: NA,3,FALSE
+BRD4,13575,BRD4,somatic: lethal midline carcinoma of young people; germline: NA,3,FALSE
+BRIP1,20473,BRIP1,"somatic: NA; germline: AML, leukaemia, breast",3,FALSE
+BTG1,1130,BTG1,somatic: B-CLL; germline: NA,3,FALSE
+BTG2,1131,BTG2,somatic: DLBCL; germline: NA,2,FALSE
+BTK,1133,BTK,"somatic: CLL, mantle cell lymphoma, WM; germline: NA",3,FALSE
+BUB1B,1149,BUB1B,somatic: NA; germline: rhabdomyosarcoma,3,FALSE
+PIERCE2,44654,C15orf65,"somatic: PMBL, Hodgkin lymphoma; germline: NA",2,FALSE
+CACNA1D,1391,CACNA1D,somatic: adrenal aldosterone producing adenoma; germline: NA,3,FALSE
+CALR,1455,CALR,"somatic: MPN, MDS; germline: NA",4,TRUE
+CAMTA1,18806,CAMTA1,somatic: epithelioid haemangioendothelioma; germline: NA,3,FALSE
+CANT1,19721,CANT1,somatic: prostate; germline: NA,3,FALSE
+CARD11,16393,CARD11,somatic: DLBCL; germline: NA,4,TRUE
+CARS1,1493,CARS,somatic: ALCL; germline: NA,3,FALSE
+CASP3,1504,CASP3,somatic: ovarian cancer; germline: NA,2,FALSE
+CASP8,1509,CASP8,"somatic: hepatocellular, oral squamous cell, breast; germline: NA",3,FALSE
+CASP9,1511,CASP9,somatic: glioma; germline: NA,2,FALSE
+CBFA2T3,1537,CBFA2T3,somatic: AML; germline: NA,3,FALSE
+CBFB,1539,CBFB,somatic: AML; germline: NA,3,FALSE
+CBL,1541,CBL,"somatic: AML, JMML, MDS; germline: NA",4,TRUE
+CBLB,1542,CBLB,somatic: AML; germline: NA,3,FALSE
+CBLC,15961,CBLC,somatic: AML; germline: NA,3,FALSE
+CCDC6,18782,CCDC6,"somatic: papillary thyroid, CML, NSCLC; germline: NA",3,FALSE
+CCNB1IP1,19437,CCNB1IP1,somatic: leiomyoma; germline: NA,3,FALSE
+CCNC,1581,CCNC,somatic: T-ALL; germline: NA,2,FALSE
+CCND1,1582,CCND1,"somatic: CLL, B-ALL, breast; germline: NA",3,FALSE
+CCND2,1583,CCND2,"somatic: NHL,CLL; germline: NA",3,FALSE
+CCND3,1585,CCND3,somatic: MM; germline: NA,3,FALSE
+CCNE1,1589,CCNE1,somatic: serous ovarian; germline: NA,3,FALSE
+CCR4,1605,CCR4,somatic: adult T-cell leukaemia/lymphoma; germline: NA,2,FALSE
+CCR7,1608,CCR7,somatic: adult T-cell leukaemia/lymphoma; germline: NA,2,FALSE
+CD209,1641,CD209,somatic: prostate carcinoma; germline: NA,2,FALSE
+CD274,17635,CD274,"somatic: PMBL, Hodgkin lymphoma; germline: NA",3,FALSE
+CD28,1653,CD28,somatic: T-cell lymphoma; germline: NA,2,FALSE
+CD74,1697,CD74,somatic: NSCLC; germline: NA,3,FALSE
+CD79A,1698,CD79A,"somatic: DLBCL, WM; germline: NA",3,FALSE
+CD79B,1699,CD79B,"somatic: DLBCL, WM; germline: NA",3,FALSE
+CDC73,16783,CDC73,"somatic: parathyroid adenoma; germline: parathyroid adenoma, multiple ossifying jaw fibroma",4,TRUE
+CDH1,1748,CDH1,"somatic: lobular breast, gastric; germline: gastric",5,TRUE
+CDH10,1749,CDH10,somatic: melanoma; germline: pancreatic ductal adenocarcinoma,3,FALSE
+CDH11,1750,CDH11,somatic: aneurysmal bone cyst; germline: NA,3,FALSE
+CDH17,1756,CDH17,somatic: melanoma; germline: NA,2,FALSE
+CDK12,24224,CDK12,somatic: serous ovarian; germline: NA,4,TRUE
+CDK4,1773,CDK4,somatic: NA; germline: melanoma,3,FALSE
+CDK6,1777,CDK6,somatic: ALL; germline: NA,3,FALSE
+CDKN1A,1784,CDKN1A,somatic: bladder cancer; germline: NA,2,FALSE
+CDKN1B,1785,CDKN1B,"somatic: breast, small intestine neuroendocrine tumours; germline: pituitary, parathyroid",4,TRUE
+CDKN2A,1787,CDKN2A,"somatic: melanoma, multiple other tumour types; germline: melanoma, pancreatic",5,TRUE
+CDKN2C,1789,CDKN2C,"somatic: glioma, MM; germline: NA",3,FALSE
+CDX2,1806,CDX2,somatic: AML; germline: NA,3,FALSE
+CEBPA,1833,CEBPA,"somatic: AML, MDS; germline: NA",4,TRUE
+CEP89,25907,CEP89,somatic: Spitzoid tumour; germline: NA,2,FALSE
+CHCHD7,28314,CHCHD7,somatic: salivary adenoma; germline: NA,3,FALSE
+CHD2,1917,CHD2,"somatic: melanoma, large intestine, CLL, monoclonal B lymphocytosis; germline: NA",2,FALSE
+CHD4,1919,CHD4,somatic: uterine serous carcinoma; germline: NA,3,FALSE
+CHEK2,16627,CHEK2,somatic: NA; germline: breast,3,FALSE
+CHIC2,1935,CHIC2,somatic: AML; germline: NA,2,FALSE
+CHST11,17422,CHST11,somatic: B-CLL; germline: NA,2,FALSE
+CIC,14214,CIC,"somatic: oligodendroglioma, soft tissue sarcoma; germline: NA",4,TRUE
+CIITA,7067,CIITA,"somatic: PMBL, Hodgkin lymphoma; germline: NA",3,FALSE
+CLIP1,10461,CLIP1,somatic: Spitzoid tumour; germline: NA,3,FALSE
+CLP1,16999,CLP1,somatic: AML; germline: NA,2,FALSE
+CLTC,2092,CLTC,"somatic: ALCL, renal; germline: NA",3,FALSE
+CLTCL1,2093,CLTCL1,somatic: ALCL; germline: NA,3,FALSE
+CNBD1,26663,CNBD1,"somatic: gastric cancer, colon cancer; germline: NA",2,FALSE
+CNBP,13164,CNBP,somatic: aneurysmal bone cyst; germline: NA,3,FALSE
+CNOT3,7879,CNOT3,somatic: T-ALL; germline: NA,3,FALSE
+CNTNAP2,13830,CNTNAP2,"somatic: glioma, melanoma; germline: NA",2,FALSE
+CNTRL,1858,CNTRL,"somatic: MPN, NHL; germline: NA",3,FALSE
+COL1A1,2197,COL1A1,"somatic: DFSP, aneurysmal bone cyst; germline: NA",3,FALSE
+COL2A1,2200,COL2A1,"somatic: chondrosarcoma, enchondroma; germline: NA",3,FALSE
+COL3A1,2201,COL3A1,somatic: lipoblastoma; germline: NA,2,FALSE
+COX6C,2285,COX6C,somatic: uterine leiomyoma; germline: NA,2,FALSE
+CPEB3,21746,CPEB3,somatic: lung cancer; germline: NA,2,FALSE
+CREB1,2345,CREB1,"somatic: clear cell sarcoma, angiomatoid fibrous histiocytoma; germline: NA",3,FALSE
+CREB3L1,18856,CREB3L1,somatic: myxofibrosarcoma; germline: NA,3,FALSE
+CREB3L2,23720,CREB3L2,somatic: fibromyxoid sarcoma; germline: NA,3,FALSE
+CREBBP,2348,CREBBP,"somatic: ALL, AML, DLBCL, B-NHL; germline: NA",4,TRUE
+CRLF2,14281,CRLF2,"somatic: B-ALL, Downs associated ALL; germline: NA",3,FALSE
+CRNKL1,15762,CRNKL1,somatic: base cell carcinoma; germline: NA,2,FALSE
+CRTC1,16062,CRTC1,somatic: salivary gland mucoepidermoid; germline: NA,3,FALSE
+CRTC3,26148,CRTC3,somatic: salivary gland mucoepidermoid; germline: NA,3,FALSE
+CSF1R,2433,CSF1R,"somatic: MDS, CML, AML, hemangioblastoma, CCRCC; germline: NA",2,FALSE
+CSF3R,2439,CSF3R,"somatic: aCML, CNL,  leukaemia lymphoma and MDS associated with severe congenital neutropenia, CMML, de novo AML, MDS; germline: NA",3,FALSE
+CSMD3,19291,CSMD3,"somatic: ovarian cancer, oral SCC, lung cancer; germline: NA",2,FALSE
+CTCF,13723,CTCF,"somatic: endometrial, breast, head and neck cancer; germline: NA",3,FALSE
+CTNNA1,2509,CTNNA1,"somatic: AML, MDS, cutaneous melanoma; germline: gastric cancer",3,FALSE
+CTNNA2,2510,CTNNA2,somatic: gastric cancer; germline: NA,2,FALSE
+CTNNB1,2514,CTNNB1,"somatic: colorectal, ovarian,  hepatoblastoma, pleomorphic salivary gland adenoma, other tumour types; germline: NA",4,TRUE
+CTNND1,2515,CTNND1,somatic: large intestine carcinoma; germline: NA,2,FALSE
+CTNND2,2516,CTNND2,"somatic: prostae adenocarcinoma, GIST; germline: NA",2,FALSE
+CUL3,2553,CUL3,somatic: lung cancer; germline: NA,2,FALSE
+CUX1,2557,CUX1,"somatic: endometrial, melanoma, colorectal, AML, MDS, other tumour types; germline: NA",3,FALSE
+CXCR4,2561,CXCR4,somatic: WM; germline: NA,4,TRUE
+CYLD,2584,CYLD,somatic: cylindroma; germline: cylindroma,4,TRUE
+CYP2C8,2622,CYP2C8,somatic: melanoma; germline: NA,2,FALSE
+CYSLTR2,18274,CYSLTR2,somatic: uveal melanoma; germline: NA,2,FALSE
+DAXX,2681,DAXX,"somatic: pancreatic neuroendocrine tumour, paediatric glioblastoma; germline: NA",3,FALSE
+DCAF12L2,32950,DCAF12L2,somatic: CRC; germline: NA,2,FALSE
+DCC,2701,DCC,"somatic: CRC, melanoma, SCC; germline: NA",2,FALSE
+DCTN1,2711,DCTN1,"somatic: inflammatory myofibroblastic tumour, Spitzoid tumour; germline: NA",3,FALSE
+DDB2,2718,DDB2,"somatic: NA; germline: skin basal cell, skin squamous cell, melanoma",3,FALSE
+DDIT3,2726,DDIT3,somatic: liposarcoma; germline: NA,3,FALSE
+DDR2,2731,DDR2,"somatic: squamous cell carcinoma, NSCLC; germline: NA",3,FALSE
+DDX10,2735,DDX10,somatic: AML*; germline: NA,3,FALSE
+DDX3X,2745,DDX3X,"somatic: CLL, medulloblastoma; germline: NA",3,FALSE
+DDX5,2746,DDX5,somatic: prostate; germline: NA,3,FALSE
+DDX6,2747,DDX6,somatic: B-NHL; germline: NA,3,FALSE
+DEK,2768,DEK,somatic: AML; germline: NA,3,FALSE
+DGCR8,2847,DGCR8,somatic: Wilms tumour; germline: NA,2,FALSE
+DICER1,17098,DICER1,"somatic: sex cord-stromal tumour, TGCT, embryonal rhabdomyosarcoma, pleuropulmonary blastoma, pituitary blastoma, Wilms tumour, thyroid cancer, other tumour types; germline: pleuropulmonary blastoma",5,TRUE
+DNAJB1,5270,DNAJB1,somatic: fibrolamellar hepatocellular carcinoma; germline: NA,3,FALSE
+DNM2,2974,DNM2,somatic: T-ALL; germline: NA,3,FALSE
+DNMT3A,2978,DNMT3A,somatic: AML; germline: NA,4,TRUE
+DROSHA,17904,DROSHA,"somatic: Wilms tumour, NSCLC, bladder carcinoma; germline: NA",3,FALSE
+DUX4L1,3082,DUX4L1,somatic: soft tissue sarcoma; germline: NA,2,FALSE
+EBF1,3126,EBF1,somatic: lipoma; germline: NA,3,FALSE
+ECT2L,21118,ECT2L,somatic: ETP ALL; germline: NA,2,FALSE
+EED,3188,EED,"somatic: malignant peripheral nerve sheath tumours, MDS and related, lung adenocarcinoma; germline: NA",2,FALSE
+EGFR,3236,EGFR,"somatic: glioma, NSCLC; germline: NSCLC",5,TRUE
+EIF1AX,3250,EIF1AX,"somatic: uveal melanoma, thyroid cancer (PDTC and ATC), low grade serous ovarian cancer; germline: NA",2,FALSE
+EIF3E,3277,EIF3E,somatic: colorectal; germline: NA,3,FALSE
+EIF4A2,3284,EIF4A2,somatic: NHL; germline: NA,3,FALSE
+ELF3,3318,ELF3,somatic: pancreatic cancer; germline: NA,2,FALSE
+ELF4,3319,ELF4,somatic: AML; germline: NA,3,FALSE
+ELK4,3326,ELK4,somatic: prostate; germline: NA,3,FALSE
+ELL,23114,ELL,somatic: AL; germline: NA,3,FALSE
+ELN,3327,ELN,somatic: B-ALL; germline: NA,2,FALSE
+EML4,1316,EML4,somatic: NSCLC; germline: NA,3,FALSE
+EP300,3373,EP300,"somatic: colorectal, breast, pancreatic, AML, ALL, DLBCL; germline: NA",4,TRUE
+EPAS1,3374,EPAS1,"somatic: paraganglioma, pheochromocytoma, central nervous system hemangioblastomas; germline: NA",3,FALSE
+EPHA3,3387,EPHA3,"somatic: lung cancer, CRC, melanoma; germline: NA",2,FALSE
+EPHA7,3390,EPHA7,"somatic: CRC, melanoma; germline: NA",2,FALSE
+EPS15,3419,EPS15,somatic: ALL; germline: NA,3,FALSE
+ERBB2,3430,ERBB2,"somatic: breast, ovarian, other tumour types, NSCLC, gastric; germline: NA",4,TRUE
+ERBB3,3431,ERBB3,"somatic: colon, gastric, head and neck, bladder, skin; germline: NA",4,TRUE
+ERBB4,3432,ERBB4,"somatic: melanoma, gastric, NSCLC; germline: NA",5,TRUE
+ERC1,17072,ERC1,"somatic: papillary thyroid, Spitzoid tumour; germline: NA",3,FALSE
+ERCC2,3434,ERCC2,"somatic: NA; germline: skin basal cell, skin squamous cell, melanoma",3,FALSE
+ERCC3,3435,ERCC3,"somatic: NA; germline: skin basal cell, skin squamous cell, melanoma",3,FALSE
+ERCC4,3436,ERCC4,"somatic: NA; germline: skin basal cell, skin squamous cell, melanoma",3,FALSE
+ERCC5,3437,ERCC5,"somatic: NA; germline: skin basal cell, skin squamous cell, melanoma",3,FALSE
+ERG,3446,ERG,"somatic: Ewing sarcoma, prostate, AML; germline: NA",3,FALSE
+ESR1,3467,ESR1,somatic: breast; germline: NA,4,TRUE
+ETNK1,24649,ETNK1,"somatic: aCML, CMML, SM-AHD, HES; germline: NA",3,FALSE
+ETV1,3490,ETV1,"somatic: Ewing sarcoma, prostate; germline: NA",3,FALSE
+ETV4,3493,ETV4,"somatic: Ewing sarcoma, prostate carcinoma; germline: NA",3,FALSE
+ETV5,3494,ETV5,somatic: prostate; germline: NA,3,FALSE
+ETV6,3495,ETV6,"somatic: congenital fibrosarcoma, multiple different leukaemia and lymphoma tumour types including ALL, secretory breast, MDS; germline: NA",3,FALSE
+EWSR1,3508,EWSR1,"somatic: Ewing sarcoma, desmoplastic small round cell tumour , ALL, clear cell sarcoma, sarcoma, myoepithelioma, mesothelioma; germline: NA",3,FALSE
+EXT1,3512,EXT1,"somatic: NA; germline: exostoses, osteosarcoma",3,FALSE
+EXT2,3513,EXT2,"somatic: NA; germline: exostoses, osteosarcoma",3,FALSE
+EZH2,3527,EZH2,somatic: DLBCL; germline: NA,4,TRUE
+EZR,12691,EZR,somatic: NSCLC; germline: NA,3,FALSE
+FADD,3573,FADD,"somatic: breast cancer, HNSCC; germline: lymphoma",3,FALSE
+FAM131B,22202,FAM131B,somatic: pilocytic astrocytoma; germline: NA,2,FALSE
+FAM135B,28029,FAM135B,somatic: SCLC; germline: NA,2,FALSE
+FAM47C,25301,FAM47C,"somatic: melanoma, clear cell sarcoma of soft parts, SCLC; germline: NA",2,FALSE
+FANCA,3582,FANCA,"somatic: NA; germline: AML, leukaemia",3,FALSE
+FANCC,3584,FANCC,"somatic: NA; germline: AML, leukaemia",3,FALSE
+FANCD2,3585,FANCD2,"somatic: NA; germline: AML, leukaemia",3,FALSE
+FANCE,3586,FANCE,"somatic: NA; germline: AML, leukaemia",3,FALSE
+FANCF,3587,FANCF,"somatic: NA; germline: AML, leukaemia",3,FALSE
+FANCG,3588,FANCG,"somatic: NA; germline: AML, leukaemia",3,FALSE
+FAS,11920,FAS,"somatic: TGCT, nasal NK/T lymphoma, skin squamous cell carcinoma-burn scar related; germline: NA",3,FALSE
+FAT1,3595,FAT1,"somatic: oral squamous cell, chemorefractory CLL, head and neck, pancreatic acinar cell carcinoma; germline: pancreatic",5,TRUE
+FAT3,23112,FAT3,"somatic: SCC, colon adenocarcinoma, gastric adenocarcinoma; germline: NA",2,FALSE
+FAT4,23109,FAT4,"somatic: lymphoma, pancreatic, head and neck, melanoma, hepatocellular carcinoma; germline: NA",3,FALSE
+FBLN2,3601,FBLN2,"somatic: breast cancer, colorectal adenocarcinoma; germline: NA",2,FALSE
+FBXO11,13590,FBXO11,somatic: DLBCL; germline: NA,3,FALSE
+FBXW7,16712,FBXW7,"somatic: colorectal, endometrial, T-ALL; germline: NA",4,TRUE
+FCGR2B,3618,FCGR2B,somatic: ALL; germline: NA,3,FALSE
+FCRL4,18507,FCRL4,somatic: B-NHL; germline: NA,3,FALSE
+FEN1,3650,FEN1,somatic: NA; germline: breast cancer,2,FALSE
+FES,3657,FES,"somatic: HNSCC, ovarian carcinoma; germline: NA",3,FALSE
+FEV,18562,FEV,somatic: Ewing sarcoma; germline: NA,3,FALSE
+FGFR1,3688,FGFR1,"somatic: MPN, NHL, salivary adenoma; germline: NA",3,FALSE
+CEP43,17012,FGFR1OP,"somatic: MPN, NHL; germline: NA",3,FALSE
+FGFR2,3689,FGFR2,"somatic: gastric, NSCLC, endometrial; germline: NA",4,TRUE
+FGFR3,3690,FGFR3,"somatic: bladder, MM, T-cell lymphoma; germline: NA",4,TRUE
+FGFR4,3691,FGFR4,somatic: rhabdomyosarcoma; germline: NA,3,FALSE
+FH,3700,FH,"somatic: NA; germline: leiomyomatosis, renal",3,FALSE
+FHIT,3701,FHIT,somatic: pleomorphic salivary gland adenoma; germline: NA,3,FALSE
+FIP1L1,19124,FIP1L1,somatic: idiopathic hypereosinophilic syndrome; germline: NA,3,FALSE
+FKBP9,3725,FKBP9,somatic: glioma; germline: NA,2,FALSE
+FLCN,27310,FLCN,"somatic: NA; germline: renal, fibrofolliculomas, trichodiscomas",3,FALSE
+FLI1,3749,FLI1,somatic: Ewing sarcoma; germline: NA,3,FALSE
+FLNA,3754,FLNA,somatic: phyllodes tumour of the breast; germline: NA,2,FALSE
+FLT3,3765,FLT3,"somatic: AML, ALL; germline: NA",4,TRUE
+FLT4,3767,FLT4,somatic: soft tissue sarcoma; germline: NA,4,TRUE
+FNBP1,17069,FNBP1,somatic: AML; germline: NA,2,FALSE
+FOXA1,5021,FOXA1,"somatic: breast, prostate; germline: NA",3,FALSE
+FOXL2,1092,FOXL2,somatic: granulosa-cell tumour of the ovary; germline: NA,4,TRUE
+FOXO1,3819,FOXO1,somatic: alveolar rhabdomyosarcoma; germline: NA,3,FALSE
+FOXO3,3821,FOXO3,somatic: AL; germline: NA,3,FALSE
+FOXO4,7139,FOXO4,"somatic: AL, soft tissue sarcoma; germline: NA",3,FALSE
+FOXP1,3823,FOXP1,somatic: ALL; germline: NA,3,FALSE
+FOXR1,29980,FOXR1,somatic: neuroblastoma; germline: NA,2,FALSE
+FSTL3,3973,FSTL3,somatic: B-CLL; germline: NA,3,FALSE
+FUBP1,4004,FUBP1,somatic: oligodendroglioma; germline: NA,3,FALSE
+FUS,4010,FUS,"somatic: liposarcoma, AML, Ewing sarcoma, angiomatoid fibrous histiocytoma, fibromyxoid sarcoma; germline: NA",3,FALSE
+GAS7,4169,GAS7,somatic: AML*; germline: NA,3,FALSE
+GATA1,4170,GATA1,somatic: megakaryoblastic leukaemia of Downs syndrome; germline: NA,4,TRUE
+GATA2,4171,GATA2,somatic: AML (CML blast transformation); germline: NA,3,FALSE
+GATA3,4172,GATA3,somatic: breast; germline: NA,4,TRUE
+GLI1,4317,GLI1,"somatic: CRC, oesophagus cancer; germline: NA",2,FALSE
+GMPS,4378,GMPS,somatic: AML; germline: NA,2,FALSE
+GNA11,4379,GNA11,"somatic: uveal melanoma, primary central nervous system melanocytic neoplasms; germline: NA",4,TRUE
+GNAQ,4390,GNAQ,"somatic: uveal melanoma, primary central nervous system melanocytic neoplasms; germline: NA",4,TRUE
+GNAS,4392,GNAS,"somatic: pituitary adenoma, pancreatic intraductal papillary mucinous neoplasm, fibrous dysplasia; germline: NA",4,TRUE
+GOLGA5,4428,GOLGA5,"somatic: papillary thyroid, Spitzoid tumour; germline: NA",3,FALSE
+GOLPH3,15452,GOLPH3,"somatic: breast cancer, NSCLC, ovarian cancer; germline: NA",2,FALSE
+GOPC,17643,GOPC,"somatic: glioblastoma, cholangiocarcinoma, borderline ovarian; germline: NA",3,FALSE
+GPC3,4451,GPC3,somatic: NA; germline: Wilms tumour,3,FALSE
+GPC5,4453,GPC5,somatic: lung adenocarcinoma; germline: NA,2,FALSE
+GPHN,15465,GPHN,somatic: AL; germline: NA,3,FALSE
+GRIN2A,4585,GRIN2A,"somatic: melanoma, colorectal carcinoma, gastric carcinoma, lung carcinoma; germline: NA",4,TRUE
+GRM3,4595,GRM3,"somatic: melanoma, oral SCC; germline: NA",2,FALSE
+H3-3A,4764,H3F3A,somatic: glioma; germline: NA,4,TRUE
+H3-3B,4765,H3F3B,somatic: chondroblastoma; germline: NA,3,FALSE
+HERPUD1,13744,HERPUD1,somatic: prostate; germline: NA,3,FALSE
+HEY1,4880,HEY1,somatic: mesenchymal chondrosarcoma; germline: NA,3,FALSE
+HIF1A,4910,HIF1A,"somatic: endometrioid carcinoma, glioblastoma, colorectal, renal, lung, pancreatic; germline: NA",3,FALSE
+HIP1,4913,HIP1,"somatic: CMML, NSCLC; germline: NA",3,FALSE
+H3C2,4776,HIST1H3B,somatic: glioma; germline: NA,3,FALSE
+H4C9,4793,HIST1H4I,somatic: NHL; germline: NA,3,FALSE
+HLA-A,4931,HLA-A,somatic: Spitzoid tumour; germline: NA,3,FALSE
+HLF,4977,HLF,somatic: ALL; germline: NA,3,FALSE
+HMGA1,5010,HMGA1,"somatic: microfollicular thyroid adenoma, various benign mesenchymal tumours; germline: NA",3,FALSE
+HMGA2,5009,HMGA2,"somatic: lipoma, leiomyoma, pleomorphic salivary gland adenoma; germline: NA",3,FALSE
+HMGN2P46,26817,HMGN2P46,somatic: prostate; germline: NA,2,FALSE
+HNF1A,11621,HNF1A,"somatic: hepatic adenoma, hepatocellular; germline: hepatic adenoma, hepatocellular carcinoma",5,TRUE
+HNRNPA2B1,5033,HNRNPA2B1,somatic: prostate; germline: NA,3,FALSE
+HOOK3,23576,HOOK3,somatic: papillary thyroid; germline: NA,3,FALSE
+HOXA11,5101,HOXA11,somatic: CML; germline: NA,3,FALSE
+HOXA13,5102,HOXA13,somatic: AML; germline: NA,3,FALSE
+HOXA9,5109,HOXA9,somatic: AML*; germline: NA,3,FALSE
+HOXC11,5123,HOXC11,somatic: AML; germline: NA,3,FALSE
+HOXC13,5125,HOXC13,somatic: AML; germline: NA,3,FALSE
+HOXD11,5134,HOXD11,somatic: AML; germline: NA,3,FALSE
+HOXD13,5136,HOXD13,somatic: AML*; germline: NA,3,FALSE
+HRAS,5173,HRAS,"somatic: infrequent sarcomas, rare other tumour types; germline: rhabdomyosarcoma, ganglioneuroblastoma, bladder",5,TRUE
+HSP90AA1,5253,HSP90AA1,somatic: NHL; germline: NA,3,FALSE
+HSP90AB1,5258,HSP90AB1,somatic: NHL; germline: NA,3,FALSE
+ID3,5362,ID3,somatic: Burkitt lymphoma; germline: NA,2,FALSE
+IDH1,5382,IDH1,somatic: glioblastoma; germline: NA,4,TRUE
+IDH2,5383,IDH2,somatic: glioblastoma; germline: NA,4,TRUE
+IGF2BP2,28867,IGF2BP2,somatic: lymphoma; germline: NA,2,FALSE
+IGH,5477,IGH,"somatic: MM, Burkitt lymphoma, NHL, CLL, B-ALL, MALT, MLCLS; germline: NA",3,FALSE
+IGK,5715,IGK,"somatic: Burkitt lymphoma, B-NHL; germline: NA",3,FALSE
+IGL,5853,IGL,somatic: Burkitt lymphoma; germline: NA,3,FALSE
+IKBKB,5960,IKBKB,somatic: SMZL; germline: NA,3,FALSE
+IKZF1,13176,IKZF1,"somatic: ALL, DLBCL; germline: NA",4,TRUE
+IKZF3,13178,IKZF3,"somatic: B-ALL, CLL, breast cancer, colorectal cancer; germline: NA",3,FALSE
+IL2,6001,IL2,somatic: intestinal T-cell lymphoma; germline: NA,3,FALSE
+IL21R,6006,IL21R,somatic: NHL; germline: NA,3,FALSE
+IL6ST,6021,IL6ST,somatic: hepatocellular carcinoma; germline: NA,3,FALSE
+IL7R,6024,IL7R,"somatic: ALL, ETP ALL; germline: NA",3,FALSE
+IRF4,6119,IRF4,somatic: MM; germline: NA,3,FALSE
+IRS4,6128,IRS4,"somatic: glioma, rhabdomyosarcoma, melanoma, breast cancer, T-ALL; germline: NA",3,FALSE
+ISX,28084,ISX,somatic: melanoma; germline: NA,2,FALSE
+ITGAV,6150,ITGAV,somatic: large intestine carcinoma; germline: NA,2,FALSE
+ITK,6171,ITK,somatic: peripheral T-cell lymphoma; germline: NA,3,FALSE
+JAK1,6190,JAK1,somatic: ALL; germline: NA,4,TRUE
+JAK2,6192,JAK2,"somatic: ALL, AML, MPN,  CML; germline: NA",4,TRUE
+JAK3,6193,JAK3,"somatic: acute megakaryocytic leukaemia, ETP ALL; germline: NA",4,TRUE
+JAZF1,28917,JAZF1,somatic: endometrial stromal tumour; germline: NA,2,FALSE
+JUN,6204,JUN,somatic: sarcoma; germline: NA,3,FALSE
+KAT6A,13013,KAT6A,somatic: AML; germline: NA,3,FALSE
+KAT6B,17582,KAT6B,"somatic: AML, leiomyoma; germline: NA",3,FALSE
+KAT7,17016,KAT7,somatic: CCRCC; germline: NA,2,FALSE
+KCNJ5,6266,KCNJ5,somatic: adrenal adenoma; germline: NA,4,TRUE
+KDM5A,9886,KDM5A,somatic: AML; germline: NA,3,FALSE
+KDM5C,11114,KDM5C,somatic: clear cell renal carcinoma; germline: NA,4,TRUE
+KDM6A,12637,KDM6A,"somatic: renal cell carcinoma, bladder carcinoma, oesophageal SCC, MM, medulloblastoma, T-ALL, other tumour types; germline: NA",4,TRUE
+KDR,6307,KDR,"somatic: NSCLC, angiosarcoma; germline: melanoma",5,TRUE
+KDSR,4021,KDSR,somatic: B-NHL; germline: NA,3,FALSE
+KEAP1,23177,KEAP1,"somatic: NSCLC, breast carcinoma; germline: NA",4,TRUE
+KIAA1549,22219,KIAA1549,somatic: pilocytic astrocytoma; germline: NA,2,FALSE
+KIF5B,6324,KIF5B,"somatic: NSCLC, Spitzoid tumour; germline: NA",3,FALSE
+KIT,6342,KIT,"somatic: GIST, AML, TGCT, mastocytosis, mucosal melanoma; germline: GIST, epithelioma",5,TRUE
+KLF4,6348,KLF4,somatic: meningioma; germline: NA,3,FALSE
+KLF6,2235,KLF6,"somatic: prostate, glioma; germline: NA",3,FALSE
+KLK2,6363,KLK2,somatic: prostate; germline: NA,3,FALSE
+KMT2A,7132,KMT2A,"somatic: AML, ALL; germline: NA",4,TRUE
+KMT2C,13726,KMT2C,somatic: medulloblastoma; germline: NA,4,TRUE
+KMT2D,7133,KMT2D,"somatic: medulloblastoma, renal; germline: NA",4,TRUE
+KNL1,24054,KNL1,somatic: AML; germline: NA,3,FALSE
+KNSTRN,30767,KNSTRN,somatic: SCC; germline: NA,2,FALSE
+KRAS,6407,KRAS,"somatic: pancreatic, colorectal, lung, thyroid, AML, other tumour types; germline: NA",4,TRUE
+KTN1,6467,KTN1,somatic: papillary thyroid; germline: NA,3,FALSE
+LARP4B,28987,LARP4B,"somatic: CRC, glioma; germline: NA",2,FALSE
+LASP1,6513,LASP1,somatic: AML; germline: NA,3,FALSE
+LATS1,6514,LATS1,somatic: skin basal cell carcinoma; germline: NA,3,FALSE
+LATS2,6515,LATS2,somatic: malignant mesothelioma; germline: NA,3,FALSE
+LCK,6524,LCK,somatic: T-ALL; germline: NA,3,FALSE
+LCP1,6528,LCP1,somatic: NHL; germline: NA,2,FALSE
+LEF1,6551,LEF1,"somatic: B-ALL, T-ALL, eyelid sebaceous carcinoma, AML, lymphomas; germline: NA",3,FALSE
+LEPROTL1,6555,LEPROTL1,"somatic: lung cancer, colon cancer; germline: NA",2,FALSE
+LHFPL6,6586,LHFPL6,somatic: lipoma; germline: NA,2,FALSE
+LIFR,6597,LIFR,somatic: salivary adenoma; germline: NA,3,FALSE
+LMNA,6636,LMNA,somatic: Spitzoid tumour; germline: NA,3,FALSE
+LMO1,6641,LMO1,"somatic: T-ALL, neuroblastoma; germline: neuroblastoma",4,TRUE
+LMO2,6642,LMO2,somatic: T-ALL; germline: NA,3,FALSE
+LPP,6679,LPP,"somatic: lipoma, leukaemia; germline: NA",3,FALSE
+LRIG3,30991,LRIG3,somatic: NSCLC; germline: NA,3,FALSE
+LRP1B,6693,LRP1B,"somatic: CLL, ovarian cancer, oesophageal squamous cell carcinoma, urothelial cancer; germline: NA",4,TRUE
+LSM14A,24489,LSM14A,somatic: Spitzoid tumour; germline: NA,2,FALSE
+LYL1,6734,LYL1,somatic: T-ALL; germline: NA,3,FALSE
+LYN,6735,LYN,"somatic: DLBCL, B-ALL, MPN; germline: NA",2,FALSE
+LZTR1,6742,LZTR1,"somatic: glioblastoma; germline: glioblastoma, schwannoma",4,TRUE
+MACC1,30215,MACC1,"somatic: liver, CRC; germline: NA",2,FALSE
+MAF,6776,MAF,somatic: MM; germline: NA,3,FALSE
+MAFB,6408,MAFB,somatic: MM; germline: NA,3,FALSE
+MALAT1,29665,MALAT1,"somatic: renal cell carcinoma (childhood epithelioid), lung; germline: NA",2,FALSE
+MALT1,6819,MALT1,somatic: MALT; germline: NA,3,FALSE
+MAML2,16259,MAML2,somatic: salivary gland mucoepidermoid; germline: NA,3,FALSE
+MAP2K1,6840,MAP2K1,"somatic: NSCLC, melanoma, colorectal; germline: NA",4,TRUE
+MAP2K2,6842,MAP2K2,"somatic: NSCLC, melanoma; germline: NA",3,FALSE
+MAP2K4,6844,MAP2K4,"somatic: pancreatic, breast, colorectal; germline: NA",3,FALSE
+MAP3K1,6848,MAP3K1,somatic: luminal A breast; germline: NA,4,TRUE
+MAP3K13,6852,MAP3K13,somatic: breast; germline: NA,3,FALSE
+MAPK1,6871,MAPK1,"somatic: CLL, ovarian mixed germ cell tumour, cervical carcinoma; germline: NA",3,FALSE
+MAX,6913,MAX,"somatic: pheochromocytoma, endometrioid carcinoma, colon carcinoma; germline: pheochromocytoma",4,TRUE
+MB21D2,30438,MB21D2,somatic: lung cancer; germline: NA,2,FALSE
+MDM2,6973,MDM2,"somatic: sarcoma, glioma, colorectal, other tumour types; germline: NA",3,FALSE
+MDM4,6974,MDM4,"somatic: glioblastoma, bladder, retinoblastoma; germline: NA",3,FALSE
+MDS2,29633,MDS2,somatic: MDS; germline: NA,2,FALSE
+MECOM,3498,MECOM,"somatic: AML, CML, MDS; germline: NA",3,FALSE
+MED12,11957,MED12,"somatic: uterine leiomyoma, fibroadenoma, phyllodes tumour; germline: NA",4,TRUE
+MEN1,7010,MEN1,"somatic: parathyroid tumours, pancreatic neuroendocrine tumour; germline: parathyroid adenoma, pituitary adenoma, pancreatic islet cell, carcinoid",5,TRUE
+MET,7029,MET,"somatic: papillary renal, head-neck squamous cell; germline: papillary renal",4,TRUE
+MGMT,7059,MGMT,somatic: glioma; germline: NA,2,FALSE
+MITF,7105,MITF,somatic: melanoma; germline: NA,3,FALSE
+MLF1,7125,MLF1,somatic: AML; germline: NA,3,FALSE
+MLH1,7127,MLH1,"somatic: colorectal, endometrial, ovarian, CNS tumours; germline: colorectal, endometrial, ovarian, CNS",5,TRUE
+MLLT1,7134,MLLT1,somatic: AL; germline: NA,3,FALSE
+MLLT10,16063,MLLT10,somatic: AL; germline: NA,3,FALSE
+MLLT11,16997,MLLT11,somatic: ALL; germline: NA,3,FALSE
+MLLT3,7136,MLLT3,somatic: ALL; germline: NA,3,FALSE
+MLLT6,7138,MLLT6,somatic: AL; germline: NA,3,FALSE
+MN1,7180,MN1,"somatic: AML, MDS; germline: NA",3,FALSE
+MNX1,4979,MNX1,somatic: AML; germline: NA,2,FALSE
+MPL,7217,MPL,somatic: MPN; germline: MPN,5,TRUE
+MRTFA,14334,MRTFA,somatic: acute megakaryocytic leukaemia; germline: NA,3,FALSE
+MSH2,7325,MSH2,"somatic: colorectal, endometrial, ovarian; germline: colorectal, endometrial, ovarian",5,TRUE
+MSH6,7329,MSH6,"somatic: colorectal; germline: colorectal, endometrial, ovarian",5,TRUE
+MSI2,18585,MSI2,somatic: CML; germline: NA,3,FALSE
+MSN,7373,MSN,somatic: ALCL; germline: NA,3,FALSE
+MTCP1,7423,MTCP1,somatic: T cell prolymphocytic leukaemia; germline: NA,3,FALSE
+MTOR,3942,MTOR,"somatic: endometrial carcinoma, head and neck, clear cell renal cell carcinoma, anaplastic thyroid cancer, urothelial cell carcinoma, central nervous system tumours, testicular germ cell tumours and other tumour types; germline: NA",4,TRUE
+MUC1,7508,MUC1,somatic: B-NHL; germline: NA,3,FALSE
+MUC16,15582,MUC16,"somatic: HNSCC, melanoma; germline: NA",2,FALSE
+MUC4,7514,MUC4,somatic: HNSCC; germline: NA,2,FALSE
+MUTYH,7527,MUTYH,somatic: NA; germline: colorectal,3,FALSE
+MYB,7545,MYB,somatic: adenoid cystic carcinoma; germline: NA,3,FALSE
+MYC,7553,MYC,"somatic: Burkitt lymphoma, amplified in other cancers, B-CLL; germline: NA",4,TRUE
+MYCL,7555,MYCL,somatic: small cell lung carcinoma; germline: NA,3,FALSE
+MYCN,7559,MYCN,"somatic: neuroblastoma, Wilms tumour; germline: NA",3,FALSE
+MYD88,7562,MYD88,somatic: ABC-DLBCL; germline: NA,4,TRUE
+MYH11,7569,MYH11,somatic: AML; germline: NA,3,FALSE
+MYH9,7579,MYH9,somatic: ALCL; germline: NA,3,FALSE
+MYO5A,7602,MYO5A,somatic: Spitzoid tumour; germline: NA,3,FALSE
+MYOD1,7611,MYOD1,somatic: embryonal rhabdomyosarcoma; germline: NA,3,FALSE
+N4BP2,29851,N4BP2,somatic: lung cancer; germline: NA,2,FALSE
+NAB2,7627,NAB2,"somatic: solitary fibrous tumour, meningeal haemangiopericytoma; germline: NA",3,FALSE
+NACA,7629,NACA,somatic: NHL; germline: NA,2,FALSE
+NBEA,7648,NBEA,"somatic: large intestine carcinoma, multiple myeloma; germline: NA",2,FALSE
+NBN,7652,NBN,"somatic: NA; germline: NHL, glioma, medulloblastoma, rhabdomyosarcoma",3,FALSE
+NCKIPSD,15486,NCKIPSD,somatic: ALL; germline: NA,2,FALSE
+NCOA1,7668,NCOA1,somatic: alveolar rhabdomyosarcoma; germline: NA,3,FALSE
+NCOA2,7669,NCOA2,"somatic: AML, chondrosarcoma, rhabdomyosarcoma; germline: NA",3,FALSE
+NCOA4,7671,NCOA4,somatic: papillary thyroid; germline: NA,3,FALSE
+NCOR1,7672,NCOR1,somatic: breast; germline: NA,4,TRUE
+NCOR2,7673,NCOR2,somatic: prostate; germline: NA,3,FALSE
+NDRG1,7679,NDRG1,somatic: prostate; germline: NA,3,FALSE
+NF1,7765,NF1,"somatic: neurofibroma, glioma; germline: neurofibroma, glioma",5,TRUE
+NF2,7773,NF2,"somatic: meningioma, acoustic neuroma, renal; germline: meningioma, acoustic neuroma",5,TRUE
+NFATC2,7776,NFATC2,somatic: Ewing sarcoma; germline: NA,3,FALSE
+NFE2L2,7782,NFE2L2,"somatic: NSCLC, HNSCC; germline: NA",3,FALSE
+NFIB,7785,NFIB,"somatic: adenoid cystic carcinoma, lipoma; germline: NA",3,FALSE
+NFKB2,7795,NFKB2,somatic: B-NHL; germline: NA,3,FALSE
+NFKBIE,7799,NFKBIE,"somatic: CLL, desmoplastic melanoma; germline: NA",3,FALSE
+NIN,14906,NIN,somatic: MPN; germline: NA,3,FALSE
+NKX2-1,11825,NKX2-1,somatic: NSCLC; germline: NA,3,FALSE
+NONO,7871,NONO,somatic: papillary renal; germline: NA,3,FALSE
+NOTCH1,7881,NOTCH1,"somatic: T-ALL, breast, bladder, skin SCC, lung SCC, head and neck SCC; germline: NA",4,TRUE
+NOTCH2,7882,NOTCH2,"somatic: marginal zone lymphoma, DLBCL, bladder; germline: NA",4,TRUE
+NPM1,7910,NPM1,"somatic: NHL, APL, AML; germline: NA",4,TRUE
+NR4A3,7982,NR4A3,somatic: extraskeletal myxoid chondrosarcoma; germline: NA,3,FALSE
+NRAS,7989,NRAS,"somatic: melanoma, MM, AML, thyroid; germline: NA",4,TRUE
+NRG1,7997,NRG1,somatic: NSCLC; germline: NA,3,FALSE
+NSD1,14234,NSD1,somatic: AML; germline: NA,3,FALSE
+NSD2,12766,NSD2,somatic: MM; germline: NA,3,FALSE
+NSD3,12767,NSD3,somatic: AML; germline: NA,3,FALSE
+NT5C2,8022,NT5C2,somatic: relapse ALL; germline: NA,3,FALSE
+NTHL1,8028,NTHL1,somatic: NA; germline: CRC,2,FALSE
+NTRK1,8031,NTRK1,"somatic: papillary thyroid, Spitzoid tumour; germline: NA",3,FALSE
+NTRK2,8032,NTRK2,"somatic: colorectal cancer, ganglioglioma, glioma, HNSCC, lung adenocarcinoma; germline: NA",3,FALSE
+NTRK3,8033,NTRK3,"somatic: congenital fibrosarcoma, secretory breast; germline: NA",4,TRUE
+NUMA1,8059,NUMA1,somatic: APL; germline: NA,3,FALSE
+NUP214,8064,NUP214,"somatic: AML, T-ALL; germline: NA",3,FALSE
+NUP98,8068,NUP98,somatic: AML; germline: NA,3,FALSE
+NUTM1,29919,NUTM1,somatic: lethal midline carcinoma; germline: NA,3,FALSE
+NUTM2B,23445,NUTM2B,somatic: endometrial stromal sarcoma; germline: NA,3,FALSE
+NUTM2D,23447,NUTM2D,somatic: endometrial stromal sarcoma; germline: NA,3,FALSE
+OLIG2,9398,OLIG2,somatic: T-ALL; germline: NA,3,FALSE
+OMD,8134,OMD,somatic: aneurysmal bone cyst; germline: NA,2,FALSE
+P2RY8,15524,P2RY8,"somatic: B-ALL, Down syndrome associated ALL; germline: NA",3,FALSE
+PABPC1,8554,PABPC1,"somatic: HNSCC, biliary tract carcinoma; germline: NA",2,FALSE
+PAFAH1B2,8575,PAFAH1B2,somatic: MLCLS; germline: NA,3,FALSE
+PALB2,26144,PALB2,"somatic: NA; germline: Wilms tumour, medulloblastoma, AML ,breast",3,FALSE
+PATZ1,13071,PATZ1,somatic: Ewing sarcoma; germline: NA,3,FALSE
+PAX3,8617,PAX3,somatic: alveolar rhabdomyosarcoma; germline: NA,3,FALSE
+PAX5,8619,PAX5,"somatic: NHL, ALL, B-ALL; germline: NA",3,FALSE
+PAX7,8621,PAX7,somatic: alveolar rhabdomyosarcoma; germline: NA,3,FALSE
+PAX8,8622,PAX8,somatic: follicular thyroid; germline: NA,3,FALSE
+PBRM1,30064,PBRM1,"somatic: clear cell renal carcinoma, breast; germline: NA",4,TRUE
+PBX1,8632,PBX1,"somatic: pre B-ALL, myoepithelioma; germline: NA",3,FALSE
+PCBP1,8647,PCBP1,somatic: CRC; germline: NA,2,FALSE
+PCM1,8727,PCM1,"somatic: papillary thyroid, CML, MPN; germline: NA",3,FALSE
+PDCD1LG2,18731,PDCD1LG2,"somatic: PMBL, Hodgkin lymphoma; germline: NA",3,FALSE
+PDE4DIP,15580,PDE4DIP,somatic: MPN; germline: NA,3,FALSE
+PDGFB,8800,PDGFB,somatic: DFSP; germline: NA,3,FALSE
+PDGFRA,8803,PDGFRA,"somatic: GIST, idiopathic hypereosinophilic syndrome, paediatric glioblastoma; germline: GIST",5,TRUE
+PDGFRB,8804,PDGFRB,"somatic: MPN, AML, CMML, CML; germline: NA",3,FALSE
+PER1,8845,PER1,"somatic: AML, CMML; germline: NA",3,FALSE
+PHF6,18145,PHF6,somatic: ETP ALL; germline: NA,3,FALSE
+PHOX2B,9143,PHOX2B,somatic: neuroblastoma; germline: neuroblastoma,4,TRUE
+PICALM,15514,PICALM,"somatic: T-ALL, AML; germline: NA",3,FALSE
+PIK3CA,8975,PIK3CA,"somatic: colorectal, gastric, glioblastoma, breast; germline: NA",4,TRUE
+PIK3CB,8976,PIK3CB,"somatic: SCC, NSCLC; germline: NA",3,FALSE
+PIK3R1,8979,PIK3R1,"somatic: glioblastoma, ovarian, colorectal; germline: NA",4,TRUE
+PIM1,8986,PIM1,somatic: NHL; germline: NA,3,FALSE
+PLAG1,9045,PLAG1,"somatic: salivary adenoma, lipoblastoma; germline: NA",3,FALSE
+PLCG1,9065,PLCG1,somatic: angiosarcoma; germline: NA,3,FALSE
+PML,9113,PML,"somatic: APL, ALL; germline: NA",3,FALSE
+PMS1,9121,PMS1,"somatic: NA; germline: colorectal, endometrial, ovarian",2,FALSE
+PMS2,9122,PMS2,"somatic: NA; germline: colorectal, endometrial, ovarian, medulloblastoma, glioma",3,FALSE
+POLD1,9175,POLD1,somatic: CRC; germline: CRC,4,TRUE
+POLE,9177,POLE,"somatic: colorectal carcinoma, endometrioid carcinoma, stomach carcinoma, skin cancer; germline: colorectal cancer susceptibility",5,TRUE
+POLG,9179,POLG,somatic: CRC; germline: NA,2,FALSE
+POLQ,9186,POLQ,somatic: oral SCC; germline: breast cancer,4,TRUE
+POLR2A,9187,POLR2A,somatic: meningioma; germline: NA,2,FALSE
+POT1,17284,POT1,somatic: CLL; germline: NA,3,FALSE
+POU2AF1,9211,POU2AF1,somatic: NHL; germline: NA,3,FALSE
+POU5F1,9221,POU5F1,somatic: sarcoma; germline: NA,3,FALSE
+PPARG,9236,PPARG,somatic: follicular thyroid; germline: NA,3,FALSE
+PPFIBP1,9249,PPFIBP1,"somatic: Spitzoid tumour, inflammatory myofibroblastic tumour; germline: NA",3,FALSE
+PPM1D,9277,PPM1D,"somatic: glioma, ovarian cancer, breast cancer; germline: NA",3,FALSE
+PPP2R1A,9302,PPP2R1A,somatic: clear cell ovarian carcinoma; germline: NA,3,FALSE
+PPP6C,9323,PPP6C,somatic: melanoma; germline: NA,3,FALSE
+PRCC,9343,PRCC,somatic: papillary renal; germline: NA,3,FALSE
+PRDM1,9346,PRDM1,somatic: DLBCL; germline: NA,3,FALSE
+PRDM16,14000,PRDM16,"somatic: MDS, AML; germline: NA",3,FALSE
+PRDM2,9347,PRDM2,"somatic: glioma, colon adenocarcinoma, gastric carcinoma, ovarian carcinoma, HNSCC; germline: NA",2,FALSE
+PREX2,22950,PREX2,"somatic: melanoma, pancreatic ductal adenocarcinoma; germline: NA",3,FALSE
+PRF1,9360,PRF1,"somatic: NA; germline: various leukaemia, lymphoma",3,FALSE
+PRKACA,9380,PRKACA,"somatic: fibrolamellar hepatocellular carcinoma, cortisol secreting adrenal adenoma; germline: NA",3,FALSE
+PRKAR1A,9388,PRKAR1A,"somatic: papillary thyroid; germline: myxoma, endocrine, papillary thyroid",4,TRUE
+PRKCB,9395,PRKCB,somatic: adult T-cell lymphoma-leukaemia; germline: NA,2,FALSE
+PRKD1,9407,PRKD1,"somatic: cribriform adenocarcinoma of the minor salivary glands, polymorphous adenocarcinoma of the minor salivary glands; germline: NA",2,FALSE
+PRPF40B,25031,PRPF40B,"somatic: melanoma, colon carcinoma, MDS; germline: NA",2,FALSE
+PRRX1,9142,PRRX1,somatic: AML; germline: NA,3,FALSE
+PSIP1,9527,PSIP1,somatic: AML; germline: NA,3,FALSE
+PTCH1,9585,PTCH1,"somatic: skin basal cell, medulloblastoma; germline: skin basal cell, medulloblastoma",5,TRUE
+PTEN,9588,PTEN,"somatic: glioma, prostate, endometrial; germline: harmartoma, glioma, prostate, endometrial",5,TRUE
+PTK6,9617,PTK6,"somatic: renal, gastric, head and neck, ovarian, others; germline: NA",3,FALSE
+PTPN11,9644,PTPN11,"somatic: JMML, AML, MDS; germline: NA",4,TRUE
+PTPN13,9646,PTPN13,"somatic: lung, NSCLC, gastric, peritoneal carcinomatosis; germline: hepatocellular",4,TRUE
+PTPN6,9658,PTPN6,somatic: DLBCL; germline: NA,2,FALSE
+PTPRB,9665,PTPRB,somatic: angiosarcoma; germline: NA,3,FALSE
+PTPRC,9666,PTPRC,somatic: T-ALL; germline: NA,3,FALSE
+PTPRD,9668,PTPRD,"somatic: lung cancer, kidney cancer, HNSCC, glioblastoma; germline: NA",2,FALSE
+PTPRK,9674,PTPRK,somatic: colorectal; germline: NA,3,FALSE
+PTPRT,9682,PTPRT,"somatic: HNSCC, colorectal cancer, gastric cancer, lung cancer, melanoma; germline: NA",4,TRUE
+PWWP2A,29406,PWWP2A,somatic: Spitzoid tumour; germline: NA,2,FALSE
+QKI,21100,QKI,"somatic: angiocentric glioma, colorectal cancer; germline: NA",3,FALSE
+RABEP1,17677,RABEP1,somatic: CMML; germline: NA,3,FALSE
+RAC1,9801,RAC1,"somatic: melanoma, carcinoma; germline: NA",3,FALSE
+RAD17,9807,RAD17,"somatic: lymphoma, colon cancer; germline: NA",2,FALSE
+RAD21,9811,RAD21,"somatic: AML, endometrium, colorectal, lung; germline: NA",3,FALSE
+RAD51B,9822,RAD51B,"somatic: lipoma, uterine leiomyoma; germline: NA",3,FALSE
+RAF1,9829,RAF1,"somatic: pilocytic astrocytoma, prostate; germline: NA",3,FALSE
+RALGDS,9842,RALGDS,"somatic: PMBL, Hodgkin lymphoma,; germline: NA",2,FALSE
+RANBP2,9848,RANBP2,somatic: inflammatory myofibroblastic tumour; germline: NA,3,FALSE
+RAP1GDS1,9859,RAP1GDS1,somatic: T-ALL; germline: NA,3,FALSE
+RARA,9864,RARA,somatic: APL; germline: NA,3,FALSE
+RB1,9884,RB1,"somatic: retinoblastoma, sarcoma, breast, small cell lung carcinoma; germline: retinoblastoma, sarcoma, breast, small cell lung carcinoma",5,TRUE
+RBM10,9896,RBM10,somatic: lung adenocarcinoma; germline: NA,3,FALSE
+RBM15,14959,RBM15,somatic: acute megakaryocytic leukaemia; germline: NA,3,FALSE
+RECQL4,9949,RECQL4,"somatic: NA; germline: osteosarcoma, skin basal cell, skin sqamous cell",4,TRUE
+REL,9954,REL,somatic: Hodgkin lymphoma; germline: NA,3,FALSE
+RET,9967,RET,"somatic: medullary thyroid, papillary thyroid, pheochromocytoma, NSCLC, Spitzoid tumour; germline: medullary thyroid,  papillary thyroid, pheochromocytoma",5,TRUE
+RFWD3,25539,RFWD3,somatic: lung cancer; germline: NA,3,FALSE
+RGPD3,32416,RGPD3,somatic: endometrioid adenocarcinoma; germline: NA,2,FALSE
+RGS7,10003,RGS7,somatic: melanoma; germline: NA,2,FALSE
+RHOA,667,RHOA,"somatic: diffuse gastric, T cell lymphomas, paediatric Burkitt lymphoma; germline: NA",4,TRUE
+RHOH,686,RHOH,somatic: NHL; germline: NA,3,FALSE
+RMI2,28349,RMI2,"somatic: PMBL, Hodgkin lymphoma; germline: NA",3,FALSE
+RNF213,14539,RNF213,somatic: ALCL; germline: NA,3,FALSE
+RNF43,18505,RNF43,"somatic: cholangiocarcinoma, ovary, pancreas; germline: NA",4,TRUE
+ROBO2,10250,ROBO2,"somatic: colorectal adenocarcinoma, melanoma; germline: NA",2,FALSE
+ROS1,10261,ROS1,"somatic: glioblastoma, NSCLC, Spitzoid tumour, cholangiocarcinoma, borderline ovarian; germline: NA",3,FALSE
+RPL10,10298,RPL10,somatic: T-ALL; germline: NA,3,FALSE
+RPL22,10315,RPL22,"somatic: AML, CML; germline: NA",3,FALSE
+RPL5,10360,RPL5,somatic: T-ALL; germline: NA,3,FALSE
+RPN1,10381,RPN1,somatic: AML; germline: NA,3,FALSE
+RSPO2,28583,RSPO2,somatic: colorectal; germline: NA,3,FALSE
+RSPO3,20866,RSPO3,somatic: colorectal; germline: NA,3,FALSE
+RUNX1,10471,RUNX1,"somatic: AML, pre B-ALL, T-ALL; germline: NA",4,TRUE
+RUNX1T1,1535,RUNX1T1,somatic: AML; germline: NA,3,FALSE
+S100A7,10497,S100A7,"somatic: melanoma, T-cell lymphoma; germline: NA",2,FALSE
+SALL4,15924,SALL4,"somatic: colorectal cancer, breast cancer, prostate cancer, glioblastoma, melanoma; germline: NA",3,FALSE
+SBDS,19440,SBDS,"somatic: NA; germline: AML, MDS",3,FALSE
+SDC4,10661,SDC4,somatic: NSCLC; germline: NA,3,FALSE
+SDHA,10680,SDHA,"somatic: GIST, paraganglioma; germline: paraganglioma",4,TRUE
+SDHAF2,26034,SDHAF2,somatic: NA; germline: paraganglioma,3,FALSE
+SDHB,10681,SDHB,"somatic: NA; germline: paraganglioma, pheochromocytoma",3,FALSE
+SDHC,10682,SDHC,"somatic: NA; germline: paraganglioma, pheochromocytoma",3,FALSE
+SDHD,10683,SDHD,"somatic: NA; germline: paraganglioma, pheochromocytoma",3,FALSE
+SEPTIN5,9164,SEPT5,somatic: AML; germline: NA,2,FALSE
+SEPTIN6,15848,SEPT6,somatic: AML; germline: NA,2,FALSE
+SEPTIN9,7323,SEPT9,somatic: AML*; germline: NA,2,FALSE
+SET,10760,SET,somatic: T-ALL; germline: NA,3,FALSE
+SETBP1,15573,SETBP1,"somatic: aCML, sAML, MDS/MPN-U, CMML, JMML; germline: neuroepithelial tumours",5,TRUE
+SETD1B,29187,SETD1B,"somatic: CRC, endometrium; germline: NA",2,FALSE
+SETD2,18420,SETD2,somatic: clear cell renal carcinoma; germline: NA,4,TRUE
+SETDB1,10761,SETDB1,somatic: malignant mesothelioma; germline: NA,2,FALSE
+SF3B1,10768,SF3B1,somatic: myelodysplastic syndrome; germline: NA,4,TRUE
+SFPQ,10774,SFPQ,somatic: papillary renal; germline: NA,3,FALSE
+SFRP4,10778,SFRP4,"somatic: colorectal cancer, melanoma, SCC, gastric cancer, oesophageal SCC; germline: NA",3,FALSE
+SGK1,10810,SGK1,somatic: Nodular lymphocyte predominant Hodgkin lymphoma; germline: NA,2,FALSE
+SH2B3,29605,SH2B3,"somatic: MPN, sAML, erythrocytosis, B-ALL; germline: NA",3,FALSE
+SH3GL1,10830,SH3GL1,somatic: AL; germline: NA,3,FALSE
+SHTN1,29319,SHTN1,somatic: Spitzoid tumour; germline: NA,2,FALSE
+SIRPA,9662,SIRPA,"somatic: HNSCC, colorectal cancer, Lung SCC; germline: NA",2,FALSE
+SIX1,10887,SIX1,somatic: Wilms tumour; germline: NA,3,FALSE
+SIX2,10888,SIX2,somatic: Wilms tumour; germline: NA,2,FALSE
+SKI,10896,SKI,somatic: melanoma; germline: NA,2,FALSE
+SLC34A2,11020,SLC34A2,somatic: NSCLC; germline: NA,3,FALSE
+SLC45A3,8642,SLC45A3,somatic: prostate; germline: NA,3,FALSE
+SMAD2,6768,SMAD2,"somatic: colorectal carcinoma, hepatocellular carcinoma; germline: NA",3,FALSE
+SMAD3,6769,SMAD3,"somatic: colorectal carcinoma, oral squamous cell carcinoma; germline: NA",3,FALSE
+SMAD4,6770,SMAD4,"somatic: colorectal, pancreatic, small intestine; germline: gastrointestinal polyp",5,TRUE
+SMARCA4,11100,SMARCA4,"somatic: NSCLC, SCCOHT; germline: NA",4,TRUE
+SMARCB1,11103,SMARCB1,somatic: malignant rhabdoid; germline: malignant rhabdoid,5,TRUE
+SMARCD1,11106,SMARCD1,somatic: breast; germline: NA,2,FALSE
+SMARCE1,11109,SMARCE1,somatic: NA; germline: meningioma,3,FALSE
+SMC1A,11111,SMC1A,somatic: AML; germline: NA,2,FALSE
+SMO,11119,SMO,somatic: skin basal cell; germline: NA,4,TRUE
+SND1,30646,SND1,somatic: pancreas acinar carcinoma; germline: NA,3,FALSE
+SNX29,30542,SNX29,"somatic: PMBL, Hodgkin lymphoma; germline: NA",2,FALSE
+SOCS1,19383,SOCS1,"somatic: Hodgkin lymphoma, PMBL; germline: NA",3,FALSE
+SOX2,11195,SOX2,"somatic: NSCLC, oesophageal squamous carcinoma; germline: NA",3,FALSE
+SOX21,11197,SOX21,somatic: multiple myeloma; germline: NA,2,FALSE
+SPECC1,30615,SPECC1,somatic: JMML; germline: NA,2,FALSE
+SPEN,17575,SPEN,"somatic: SMZL, adenoid cystic carcinoma, DLBCL; germline: NA",4,TRUE
+SPOP,11254,SPOP,"somatic: prostate, endometrial; germline: prostate cancer",4,TRUE
+SRC,11283,SRC,"somatic: colorectal cancer, endometrial carcinoma; germline: NA",3,FALSE
+SRGAP3,19744,SRGAP3,somatic: pilocytic astrocytoma; germline: NA,2,FALSE
+SRSF2,10783,SRSF2,"somatic: MDS, CLL; germline: NA",4,TRUE
+SRSF3,10785,SRSF3,somatic: follicular lymphoma; germline: NA,3,FALSE
+SS18,11340,SS18,somatic: synovial sarcoma; germline: NA,3,FALSE
+SS18L1,15592,SS18L1,somatic: synovial sarcoma; germline: NA,3,FALSE
+SSX1,11335,SSX1,somatic: synovial sarcoma; germline: NA,3,FALSE
+SSX2,11336,SSX2,somatic: synovial sarcoma; germline: NA,3,FALSE
+SSX4,11338,SSX4,somatic: synovial sarcoma; germline: NA,3,FALSE
+STAG1,11354,STAG1,"somatic: colorectal cancer, AML; germline: NA",2,FALSE
+STAG2,11355,STAG2,"somatic: bladder carcinoma, glioblastoma, melanoma, Ewing's sarcoma, myeloid neoplasms; germline: NA",4,TRUE
+STAT3,11364,STAT3,somatic: T-cell large granular lymphocytic leukaemia; germline: paediatric large granular lymphocytic leukaemia,5,TRUE
+STAT5B,11367,STAT5B,"somatic: large granular lymphocytic leukaemia, skin basal cell, APL; germline: NA",3,FALSE
+STAT6,11368,STAT6,"somatic: solitary fibrous tumour, meningeal haemangiopericytoma; germline: NA",3,FALSE
+STIL,10879,STIL,somatic: T-ALL; germline: NA,3,FALSE
+STK11,11389,STK11,"somatic: NSCLC, pancreatic; germline: jejunal hamartoma, ovarian, testicular, pancreatic",5,TRUE
+STRN,11424,STRN,"somatic: anaplastic thyroid, papillary thyroid, lung; germline: NA",3,FALSE
+SUB1,19985,SUB1,somatic: lung cancer; germline: NA,2,FALSE
+SUFU,16466,SUFU,somatic: medulloblastoma; germline: medulloblastoma,4,TRUE
+SUZ12,17101,SUZ12,somatic: endometrial stromal tumour; germline: NA,3,FALSE
+SYK,11491,SYK,"somatic: MDS, peripheral T-cell lymphoma; germline: NA",3,FALSE
+TAF15,11547,TAF15,"somatic: extraskeletal myxoid chondrosarcoma, ALL; germline: NA",3,FALSE
+TAL1,11556,TAL1,somatic: lymphoblastic leukaemia/biphasic; germline: NA,3,FALSE
+TAL2,11557,TAL2,somatic: T-ALL; germline: NA,3,FALSE
+TBL1XR1,29529,TBL1XR1,"somatic: splenic marginal zone lymphoma, primary central nervous system lymphoma, colorectal carcinoma, gallbladder carcinoma; germline: NA",3,FALSE
+TBX3,11602,TBX3,"somatic: breast, large intestine, skin; germline: NA",4,TRUE
+TCEA1,11612,TCEA1,somatic: salivary adenoma; germline: NA,3,FALSE
+TCF12,11623,TCF12,somatic: extraskeletal myxoid chondrosarcoma; germline: NA,3,FALSE
+TCF3,11633,TCF3,somatic: pre B-ALL; germline: NA,3,FALSE
+TCF7L2,11641,TCF7L2,somatic: colorectal; germline: NA,3,FALSE
+TCL1A,11648,TCL1A,somatic: T-CLL; germline: NA,3,FALSE
+TEC,11719,TEC,somatic: myxoid chondrosarcoma; germline: NA,2,FALSE
+TENT5C,24712,TENT5C,somatic: MM; germline: NA,3,FALSE
+TERT,11730,TERT,"somatic: melanoma, glioblastoma, hepatocellular carcinoma, bladder, skin basal cell, skin squamous cell, mesothelioma, medulloblastoma, other tumour types; germline: melanoma",5,TRUE
+TET1,29484,TET1,somatic: AML; germline: NA,3,FALSE
+TET2,25941,TET2,somatic: MDS; germline: NA,4,TRUE
+TFE3,11752,TFE3,"somatic: papillary renal, alveolar soft part sarcoma, renal; germline: NA",3,FALSE
+TFEB,11753,TFEB,somatic: renal cell carcinoma (childhood epithelioid); germline: NA,3,FALSE
+TFG,11758,TFG,"somatic: papillary thyroid, ALCL, NSCLC, extraskeletal myxoid chondrosarcoma; germline: NA",3,FALSE
+TFPT,13630,TFPT,somatic: pre-B ALL; germline: NA,2,FALSE
+TFRC,11763,TFRC,somatic: NHL; germline: NA,2,FALSE
+TGFBR2,11773,TGFBR2,"somatic: head and neck, colorectal; germline: colorectal",5,TRUE
+THRAP3,22964,THRAP3,somatic: aneurysmal bone cyst; germline: NA,2,FALSE
+TLX1,5056,TLX1,somatic: T-ALL; germline: NA,3,FALSE
+TLX3,13532,TLX3,somatic: T-ALL; germline: NA,3,FALSE
+TMEM127,26038,TMEM127,"somatic: NA; germline: pheochromocytoma, renal cell carcinoma",3,FALSE
+TMPRSS2,11876,TMPRSS2,somatic: prostate; germline: NA,3,FALSE
+TMSB4X,11881,TMSB4X,somatic: DLBCL; germline: NA,2,FALSE
+TNC,5318,TNC,"somatic: SCC, melanoma; germline: NA",2,FALSE
+TNFAIP3,11896,TNFAIP3,"somatic: marginal zone B-cell lymphomas, Hodgkin lymphoma, PMBL; germline: NA",4,TRUE
+TNFRSF14,11912,TNFRSF14,somatic: follicular lymphoma; germline: NA,3,FALSE
+TNFRSF17,11913,TNFRSF17,somatic: intestinal T-cell lymphoma; germline: NA,3,FALSE
+TOP1,11986,TOP1,somatic: AML*; germline: NA,3,FALSE
+TP53,11998,TP53,"somatic: breast, colorectal, lung, sarcoma, adrenocortical, glioma, Spitzoid tumour, multiple other tumour types; germline: breast, sarcoma, adrenocortical carcinoma, glioma, multiple other tumour types",5,TRUE
+TP63,15979,TP63,"somatic: HNSCC, DLBCL; germline: NSCLC",4,TRUE
+TPM3,12012,TPM3,"somatic: papillary thyroid, ALCL, NSCLC, Spitzoid tumour; germline: NA",3,FALSE
+TPM4,12013,TPM4,somatic: ALCL; germline: NA,3,FALSE
+TPR,12017,TPR,"somatic: papillary thyroid, NSCLC; germline: NA",3,FALSE
+TRA,12027,TRA,somatic: T-ALL; germline: NA,3,FALSE
+TRAF7,20456,TRAF7,somatic: meningioma; germline: NA,4,TRUE
+TRB,12155,TRB,somatic: T-ALL; germline: NA,3,FALSE
+TRD,12252,TRD,somatic: T-cell leukaemia; germline: NA,3,FALSE
+TRIM24,11812,TRIM24,somatic: APL; germline: NA,3,FALSE
+TRIM27,9975,TRIM27,somatic: papillary thyroid; germline: NA,3,FALSE
+TRIM33,16290,TRIM33,somatic: papillary thyroid; germline: NA,3,FALSE
+TRIP11,12305,TRIP11,somatic: AML; germline: NA,3,FALSE
+TRRAP,12347,TRRAP,somatic: melanoma; germline: NA,3,FALSE
+TSC1,12362,TSC1,"somatic: renal cell carcinoma, bladder carcinoma; germline: hamartoma, renal cell carcinoma, tuberous sclerosis tuber",5,TRUE
+TSC2,12363,TSC2,"somatic: pulmonary lymphangioleiomyomatosis (LAM), renal angiomyolipoma, HNSCC; germline: hamartoma, renal cell carcinoma, tuberous sclerosis tuber",5,TRUE
+TSHR,12373,TSHR,somatic: toxic thyroid adenoma; germline: thyroid adenoma,5,TRUE
+U2AF1,12453,U2AF1,"somatic: CLL, MDS; germline: NA",4,TRUE
+UBR5,16806,UBR5,"somatic: mantle cell lymphoma, gastric, colorectal; germline: NA",3,FALSE
+USP44,20064,USP44,"somatic: lung cancer, colon cancer; germline: NA",2,FALSE
+USP6,12629,USP6,somatic: aneurysmal bone cyst; germline: NA,3,FALSE
+USP8,12631,USP8,somatic: corticotroph adenoma; germline: NA,3,FALSE
+USP9X,12632,USP9X,somatic: colon carcinoma; germline: colon carcinoma,3,FALSE
+VAV1,12657,VAV1,somatic: T-cell lymphoma; germline: NA,2,FALSE
+VHL,12687,VHL,"somatic: renal, haemangioma, pheochromocytoma; germline: renal, haemangioma, pheochromocytoma",5,TRUE
+VTI1A,17792,VTI1A,somatic: colorectal; germline: NA,2,FALSE
+WAS,12731,WAS,somatic: NA; germline: lymphoma,3,FALSE
+WDCP,26157,WDCP,somatic: colorectal; germline: NA,3,FALSE
+WIF1,18081,WIF1,somatic: pleomorphic salivary gland adenoma; germline: NA,3,FALSE
+WNK2,14542,WNK2,somatic: gastric cancer; germline: NA,2,FALSE
+WRN,12791,WRN,"somatic: NA; germline: osteosarcoma, meningioma, other tumour types",3,FALSE
+WT1,12796,WT1,"somatic: Wilms tumour, desmoplastic small round cell tumour; germline: Wilms tumour",5,TRUE
+WWTR1,24042,WWTR1,somatic: epithelioid haemangioendothelioma; germline: NA,3,FALSE
+XPA,12814,XPA,"somatic: NA; germline: skin basal cell, skin squamous cell, melanoma",3,FALSE
+XPC,12816,XPC,"somatic: NA; germline: skin basal cell, skin squamous cell, melanoma",3,FALSE
+XPO1,12825,XPO1,somatic: CLL; germline: NA,3,FALSE
+YWHAE,12851,YWHAE,somatic: endometrial stromal sarcoma; germline: NA,3,FALSE
+ZBTB16,12930,ZBTB16,somatic: APL; germline: NA,3,FALSE
+ZCCHC8,25265,ZCCHC8,somatic: Spitzoid tumour; germline: NA,2,FALSE
+ZEB1,11642,ZEB1,"somatic: CCRCC, melanoma; germline: NA",2,FALSE
+ZFHX3,777,ZFHX3,"somatic: endometrial, gastric, prostate; germline: NA",4,TRUE
+ZMYM2,12989,ZMYM2,"somatic: MPN, NHL; germline: NA",3,FALSE
+ZMYM3,13054,ZMYM3,"somatic: CRC, breast cancer; germline: NA",2,FALSE
+ZNF331,15489,ZNF331,somatic: follicular thyroid adenoma; germline: NA,3,FALSE
+ZNF384,11955,ZNF384,somatic: ALL; germline: NA,3,FALSE
+ZNF429,20817,ZNF429,somatic: GBM; germline: NA,2,FALSE
+ZNF479,23258,ZNF479,"somatic: lung cancer, bladder carcinoma, prostate carcinoma; germline: NA",2,FALSE
+ZNF521,24605,ZNF521,somatic: ALL; germline: NA,3,FALSE
+ZNRF3,18126,ZNRF3,"somatic: colorectal cancer, adrenocortical carcinoma, gastric cancer; germline: NA",2,FALSE
+ZRSR2,23019,ZRSR2,"somatic: MDS, CLL; germline: NA",3,FALSE
