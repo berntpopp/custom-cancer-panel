@@ -1,0 +1,261 @@
+approved_symbol,hgnc_id,gene_name_reported,source,source_count,source_evidence
+ABRAXAS1,25829,ABRAXAS1,dresden_cancer_v1_list,1,TRUE
+ACD,25070,ACD,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+AIP,358,AIP,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+AKT1,391,AKT1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+ALK,427,ALK,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+ANKRD26,29186,ANKRD26,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+APC,583,APC,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+ARID1A,11110,ARID1A,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+ARID1B,18040,ARID1B,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+ATM,795,ATM,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+ATR,882,ATR,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+ATRX,886,ATRX,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+AXIN2,904,AXIN2,dresden_cancer_v1_list,1,TRUE
+BAP1,950,BAP1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+BARD1,952,BARD1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+BLM,1058,BLM,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+BMPR1A,1076,BMPR1A,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+BRAF,1097,BRAF,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+BRCA1,1100,BRCA1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+BRCA2,1101,BRCA2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+BRIP1,20473,BRIP1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+BUB1B,1149,BUB1B,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+CASR,1514,CASR,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+CBL,1541,CBL,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+CDC73,16783,CDC73,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+CDH1,1748,CDH1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+CDK4,1773,CDK4,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+CDKN1B,1785,CDKN1B,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+CDKN1C,1786,CDKN1C,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+CDKN2A,1787,CDKN2A,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+CDKN2B,1788,CDKN2B,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+CEBPA,1833,CEBPA,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+CHEK2,16627,CHEK2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+COL7A1,2214,COL7A1,dresden_cancer_v1_list,1,TRUE
+CREBBP,2348,CREBBP,dresden_cancer_v1_list,1,TRUE
+CSF3R,2439,CSF3R,dresden_cancer_v1_list,1,TRUE
+CTC1,26169,CTC1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+CTNNA1,2509,CTNNA1,dresden_cancer_v1_list,1,TRUE
+CTNNB1,2514,CTNNB1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+CTR9,16850,CTR9,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+CTRC,2523,CTRC,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+CYLD,2584,CYLD,dresden_cancer_v1_list,1,TRUE
+DDB2,2718,DDB2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+DDX41,18674,DDX41,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+DICER1,17098,DICER1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+DIS3L2,28648,DIS3L2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+DKC1,2890,DKC1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+DNAJC21,27030,DNAJC21,dresden_cancer_v1_list,1,TRUE
+DNMT3A,2978,DNMT3A,dresden_cancer_v1_list,1,TRUE
+DNMT3B,2979,DNMT3B,dresden_cancer_v1_list,1,TRUE
+DOCK8,19191,DOCK8,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+EGFR,3236,EGFR,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+ELANE,3309,ELANE,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+EPCAM,11529,EPCAM,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+ERBB2,3430,ERBB2,dresden_cancer_v1_list,1,TRUE
+ERCC1,3433,ERCC1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+ERCC2,3434,ERCC2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+ERCC3,3435,ERCC3,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+ERCC4,3436,ERCC4,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+ERCC5,3437,ERCC5,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+ERCC6L2,26922,ERCC6L2,dresden_cancer_v1_list,1,TRUE
+ETV6,3495,ETV6,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+EXT1,3512,EXT1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+EXT2,3513,EXT2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+EZH2,3527,EZH2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+FANCA,3582,FANCA,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+FANCB,3583,FANCB,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+FANCC,3584,FANCC,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+FANCD2,3585,FANCD2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+FANCE,3586,FANCE,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+FANCF,3587,FANCF,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+FANCG,3588,FANCG,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+FANCI,25568,FANCI,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+FANCL,20748,FANCL,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+FANCM,23168,FANCM,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+FAS,11920,FAS,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+FAT4,23109,FAT4,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+FH,3700,FH,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+FLCN,27310,FLCN,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+FOCAD,23377,FOCAD,dresden_cancer_v1_list,1,TRUE
+FOXE1,3806,FOXE1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+GALNT12,19877,GALNT12,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+GATA1,4170,GATA1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+GATA2,4171,GATA2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+GBA1,4177,GBA,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+GJB2,4284,GJB2,dresden_cancer_v1_list,1,TRUE
+GNA11,4379,GNA11,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+GNAQ,4390,GNAQ,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+GPC3,4451,GPC3,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+GREM1,2001,GREM1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+H19,4713,H19,dresden_cancer_v1_list,1,TRUE
+HAVCR2,18437,HAVCR2,dresden_cancer_v1_list,1,TRUE
+HAX1,16915,HAX1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+HFE,4886,HFE,dresden_cancer_v1_list,1,TRUE
+HMBS,4982,HMBS,dresden_cancer_v1_list,1,TRUE
+HOXB13,5112,HOXB13,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+HPS1,5163,HPS1,dresden_cancer_v1_list,1,TRUE
+HRAS,5173,HRAS,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+IDH1,5382,IDH1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+IDH2,5383,IDH2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+IKZF1,13176,IKZF1,dresden_cancer_v1_list,1,TRUE
+IPMK,20739,IPMK,dresden_cancer_v1_list,1,TRUE
+ITK,6171,ITK,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+JAK2,6192,JAK2,dresden_cancer_v1_list,1,TRUE
+KCNQ1OT1,6295,KCNQ1OT1,dresden_cancer_v1_list,1,TRUE
+KIF1B,16636,KIF1B,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+KIT,6342,KIT,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+KMT2C,13726,KMT2C,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+KMT2D,7133,KMT2D,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+KRAS,6407,KRAS,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+LIG4,6601,LIG4,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+LZTR1,6742,LZTR1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+MAD2L2,6764,MAD2L2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+MAP2K1,6840,MAP2K1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+MAP2K2,6842,MAP2K2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+MAP3K1,6848,MAP3K1,dresden_cancer_v1_list,1,TRUE
+MAX,6913,MAX,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+MDH2,6971,MDH2,dresden_cancer_v1_list,1,TRUE
+MEN1,7010,MEN1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+MET,7029,MET,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+MITF,7105,MITF,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+MLH1,7127,MLH1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+MLH3,7128,MLH3,dresden_cancer_v1_list,1,TRUE
+MMS19,13824,MMS19,dresden_cancer_v1_list,1,TRUE
+MRE11,7230,MRE11A | MRE11,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+MSH2,7325,MSH2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+MSH3,7326,MSH3,dresden_cancer_v1_list,1,TRUE
+MSH6,7329,MSH6,leipzig_cancer_v6,1,TRUE
+MTAP,7413,MTAP,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+MTOR,3942,MTOR,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+MUTYH,7527,MUTYH,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+NAF1,25126,NAF1,leipzig_cancer_v6,1,TRUE
+NBN,7652,NBN,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+NF1,7765,NF1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+NF2,7773,NF2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+NHP2,14377,NHP2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+NOP10,14378,NOP10,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+NRAS,7989,NRAS,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+NSD1,14234,NSD1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+NTHL1,8028,NTHL1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+PALB2,26144,PALB2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+PARN,8609,PARN,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+PAX5,8619,PAX5,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+PDGFRA,8803,PDGFRA,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+PDGFRB,8804,PDGFRB,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+PHOX2B,9143,PHOX2B,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+PIK3C2G,8973,PIK3C2G,dresden_cancer_v1_list,1,TRUE
+PIK3CA,8975,PIK3CA,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+PIK3R1,8979,PIK3R1,dresden_cancer_v1_list,1,TRUE
+PIK3R2,8980,PIK3R2,dresden_cancer_v1_list,1,TRUE
+PMS2,9122,PMS2,leipzig_cancer_v6,1,TRUE
+POLD1,9175,POLD1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+POLE,9177,POLE,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+POLH,9181,POLH,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+POT1,17284,POT1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+PPP1CB,9282,PPP1CB,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+PRF1,9360,PRF1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+PRKAR1A,9388,PRKAR1A,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+PRKN,8607,PRKN,dresden_cancer_v1_list,1,TRUE
+PRSS1,9475,PRSS1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+PTCH1,9585,PTCH1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+PTEN,9588,PTEN,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+PTPN11,9644,PTPN11,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RAD50,9816,RAD50,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RAD51,9817,RAD51,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RAD51B,9822,RAD51B,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RAD51C,9820,RAD51C,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RAD51D,9823,RAD51D,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RAF1,9829,RAF1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RB1,9884,RB1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RECQL,9948,RECQL,dresden_cancer_v1_list,1,TRUE
+RECQL4,9949,RECQL4,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RELN,9957,RELN,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+REST,9966,REST,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RET,9967,RET,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RHBDF2,20788,RHBDF2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RINT1,21876,RINT1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RIT1,10023,RIT1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RMRP,10031,RMRP,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RNF43,18505,RNF43,dresden_cancer_v1_list,1,TRUE
+RPL11,10301,RPL11,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPL15,10306,RPL15,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPL23,10316,RPL23,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPL26,10327,RPL26,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPL27,10328,RPL27,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPL31,10334,RPL31,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPL35A,10345,RPL35A,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPL36,13631,RPL36,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPL5,10360,RPL5,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPS10,10383,RPS10,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPS15,10388,RPS15,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPS17,10397,RPS17,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPS19,10402,RPS19,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPS20,10405,RPS20,dresden_cancer_v1_list,1,TRUE
+RPS24,10411,RPS24,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPS26,10414,RPS26,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPS27,10416,RPS27,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPS27A,10417,RPS27A,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPS28,10418,RPS28,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPS29,10419,RPS29,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RPS7,10440,RPS7,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RTEL1,15888,RTEL1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+RUNX1,10471,RUNX1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SAMD9L,1349,SAMD9L,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SBDS,19440,SBDS,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SDHA,10680,SDHA,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SDHAF2,26034,SDHAF2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SDHB,10681,SDHB,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SDHC,10682,SDHC,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SDHD,10683,SDHD,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SEC23B,10702,SEC23B,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SETBP1,15573,SETBP1,dresden_cancer_v1_list,1,TRUE
+SH2B3,29605,SH2B3,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SH2D1A,10820,SH2D1A,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SHOC2,15454,SHOC2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SLC5A5,11040,SLC5A5,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SLX4,23845,SLX4,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SMAD4,6770,SMAD4,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SMARCA4,11100,SMARCA4,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SMARCB1,11103,SMARCB1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SMARCE1,11109,SMARCE1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SOS1,11187,SOS1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SOS2,11188,SOS2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SPINK1,11244,SPINK1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SPRED1,20249,SPRED1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SQSTM1,11280,SQSTM1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SRGAP1,17382,SRGAP1,dresden_cancer_v1_list,1,TRUE
+STAT1,11362,STAT1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+STAT3,11364,STAT3,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+STK11,11389,STK11,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+STN1,26200,STN1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+STX11,11429,STX11,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+STXBP2,11445,STXBP2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+SUFU,16466,SUFU,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+TBXT,11515,TBXT,dresden_cancer_v1_list,1,TRUE
+TERC,11727,TERC,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+TERF2IP,19246,TERF2IP,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+TERT,11730,TERT,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+TINF2,11824,TINF2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+TMEM127,26038,TMEM127,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+TNFRSF11A,11908,TNFRSF11A,dresden_cancer_v1_list,1,TRUE
+TNIP1,16903,TNIP1,dresden_cancer_v1_list,1,TRUE
+TP53,11998,TP53,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+TRIM28,16384,TRIM28,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+TRIM37,7523,TRIM37,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+TRIP13,12307,TRIP13,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+TSC1,12362,TSC1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+TSC2,12363,TSC2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+TSR2,25455,TSR2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+UBE2T,25009,UBE2T,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+UNC13D,23147,UNC13D,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+VHL,12687,VHL,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+WAS,12731,WAS,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+WRAP53,25522,WRAP53,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+WRN,12791,WRN,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+WT1,12796,WT1,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+XPA,12814,XPA,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+XPC,12816,XPC,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+XRCC2,12829,XRCC2,leipzig_cancer_v6; dresden_cancer_v1_list,2,TRUE
+YAP1,16262,YAP1,dresden_cancer_v1_list,1,TRUE
