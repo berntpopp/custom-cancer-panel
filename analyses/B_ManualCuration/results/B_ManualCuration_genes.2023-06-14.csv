@@ -1,0 +1,13 @@
+approved_symbol,hgnc_id,gene_name_reported,source,source_count,source_evidence
+CFTR,1884,CFTR,manual_gene-list.xlsx,1,TRUE
+MAD1L1,6762,MAD1L1,manual_gene-list.xlsx,1,TRUE
+UGT1A1,12530,UGT1A1,manual_gene-list.xlsx,1,TRUE
+APOB,603,APOB,manual_gene-list.xlsx,1,TRUE
+APOE,613,APOE,manual_gene-list.xlsx,1,TRUE
+LDLR,6547,LDLR,manual_gene-list.xlsx,1,TRUE
+LDLRAP1,18640,LDLRAP1,manual_gene-list.xlsx,1,TRUE
+PCSK9,20001,PCSK9,manual_gene-list.xlsx,1,TRUE
+GCKR,4196,GCKR,manual_gene-list.xlsx,1,TRUE
+CACNA1S,1397,CACNA1S,manual_gene-list.xlsx,1,TRUE
+RYR1,10483,RYR1,manual_gene-list.xlsx,1,TRUE
+STAC3,28423,STAC3,manual_gene-list.xlsx,1,TRUE
