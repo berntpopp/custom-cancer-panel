@@ -185,7 +185,7 @@ write_csv(hpo_gene_list,
   na = "NULL")
 
 write_csv(hpo_list,
-  file = paste0("results/04_children-from-terms.",
+  file = paste0("results/02_children-from-terms.",
     creation_date,
     ".csv"),
   na = "NULL")
