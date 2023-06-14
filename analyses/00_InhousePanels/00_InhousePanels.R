@@ -2,6 +2,7 @@
 ## load libraries
 library(readxl)
 library(tidyverse)
+library(jsonlite) # needed for api calls
 library(config) # needed for config loading
 ############################################
 

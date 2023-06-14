@@ -343,9 +343,9 @@ cancergeneticslab_hereditary_cancer_panel_genes <- cancergeneticslab_hereditary_
   filter(!str_detect(Genes, "Variants not presumed by nature")) %>%
   filter(!str_detect(Genes, "Genomic DNA is subjected to FFPE repair")) %>%
   filter(!str_detect(Genes, "Variants are validated")) %>%
-  mutate (Genes = str_remove_all(Genes, "Entire coding region\\:  ")) %>%
-  mutate (Genes = str_remove_all(Genes, "Partial Genes\\: ")) %>%
-  mutate (Genes = str_remove_all(Genes, "Copy Number Variants \\(not applicable to FFPE specimens\\)\\: Copy number variants are called in all of the above genes as well as:")) %>%
+  mutate(Genes = str_remove_all(Genes, "Entire coding region\\:  ")) %>%
+  mutate(Genes = str_remove_all(Genes, "Partial Genes\\: ")) %>%
+  mutate(Genes = str_remove_all(Genes, "Copy Number Variants \\(not applicable to FFPE specimens\\)\\: Copy number variants are called in all of the above genes as well as:")) %>%
   separate_rows(., Genes, sep = "; ", convert = TRUE) %>%
   mutate (Genes = str_remove_all(Genes, "_.+")) %>%
   filter(Genes != "") %>%

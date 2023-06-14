@@ -51,7 +51,7 @@ download.file(cosmic_expert_url, cosmic_expert_filename, mode = "wb")
 
 
 ############################################
-## read in files, normalize and join 
+## read in files, normalize and join
 
 # load and normalize the COSMIC census table
 cosmic_census_table <- read_delim(cosmic_census_filename,
@@ -59,17 +59,17 @@ cosmic_census_table <- read_delim(cosmic_census_filename,
    escape_double = FALSE,
    trim_ws = TRUE)
 
-cosmic_census_table_normalize <- cosmic_census %>%
+cosmic_census_table_normalize <- cosmic_census_table %>%
   mutate(hgnc_id = hgnc_id_from_symbol_grouped(`Gene Symbol`)) %>%
   select(hgnc_id,
     gene_name_reported = `Gene Symbol`,
     tier = Tier,
-	somatic = Somatic,
-	germline = Germline,
-	tumour_types_somatic = `Tumour Types(Somatic)`,
-	tumour_types_germline = `Tumour Types(Germline)`,
-	molecular_genetics = `Molecular Genetics`,
-	role_in_cancer = `Role in Cancer`)
+  somatic = Somatic,
+  germline = Germline,
+  tumour_types_somatic = `Tumour Types(Somatic)`,
+  tumour_types_germline = `Tumour Types(Germline)`,
+  molecular_genetics = `Molecular Genetics`,
+  role_in_cancer = `Role in Cancer`)
 
 # load and normalize the COSMIC expert table
 cosmic_expert_html <- read_html(cosmic_expert_filename)
@@ -89,29 +89,29 @@ cosmic_expert_table_normalize <- cosmic_expert_table[[1]] %>%
 ## gene having > 500 mutations in expert list
 ## gene having somatic mutations
 ## gene having germline mutations
-## gene beeing in COSMIC Tier 1 or 2
+## gene being in COSMIC Tier 1 or 2
 cosmic_gene_list <- cosmic_census_table_normalize %>%
   left_join(cosmic_expert_table_normalize, by = c("hgnc_id")) %>%
   mutate(mut_per_sample = Mutations / Samples) %>%
   mutate(over_500_mut = case_when(Mutations > 500 ~ 1,
-	TRUE ~ 0)) %>%
+  TRUE ~ 0)) %>%
   mutate(germline_yes = case_when(germline == "yes" ~ 1,
-	TRUE ~ 0)) %>%
+  TRUE ~ 0)) %>%
   mutate(somatic_yes = case_when(somatic == "yes" ~ 1,
-	TRUE ~ 0)) %>%
+  TRUE ~ 0)) %>%
   mutate(tier_score = case_when(tier == 1 ~ 2,
-	tier == 2 ~ 1,
-	TRUE ~ 0)) %>%
+  tier == 2 ~ 1,
+  TRUE ~ 0)) %>%
   mutate(source = paste0("somatic: ", tumour_types_somatic, "; ", "germline: ", tumour_types_germline)) %>%
   mutate(source_count = over_500_mut + germline_yes + somatic_yes + tier_score) %>%
   mutate(source_evidence = (source_count > 3)) %>%
   mutate(approved_symbol = symbol_from_hgnc_id_grouped(hgnc_id)) %>%
   select(approved_symbol,
-	hgnc_id,
-	gene_name_reported,
-	source,
-	source_count,
-	source_evidence)
+  hgnc_id,
+  gene_name_reported,
+  source,
+  source_count,
+  source_evidence)
 ############################################
 
 

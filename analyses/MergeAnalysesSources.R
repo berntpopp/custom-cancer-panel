@@ -102,4 +102,6 @@ write_csv(results_genes_wider,
     creation_date,
     ".csv"),
   na = "NULL")
+
+# TODO: add source file checksums and date as output table
 ############################################
