@@ -52,18 +52,18 @@ leipzig_cancer_v6_list_genes <- leipzig_cancer_v6_list %>%
   unique() %>%
   mutate(Panel = "leipzig_cancer_v6") %>%
   mutate(Source = "Leipzig-Cancer_v6_gene-list.xlsx") %>%
-  mutate(hgnc_id = hgnc_id_from_symbol_grouped(Genes)) %>%
+  mutate(hgnc_id = hgnc_id_from_symbol_grouped(genes)) %>%
   mutate(approved_symbol = symbol_from_hgnc_id_grouped(hgnc_id)) %>%
-  select(approved_symbol, hgnc_id, gene_name_reported = Genes, source = Source, panel = Panel)
+  select(approved_symbol, hgnc_id, gene_name_reported = genes, source = Source, panel = Panel)
 
 ## 02) Dresden cancer panel gene list
 dresden_cancer_v1_list_genes <- dresden_cancer_v1_list %>%
   unique() %>%
   mutate(Panel = "dresden_cancer_v1_list") %>%
   mutate(Source = "Dresden-Cancer_v1_gene-list.xlsx") %>%
-  mutate(hgnc_id = hgnc_id_from_symbol_grouped(Genes)) %>%
+  mutate(hgnc_id = hgnc_id_from_symbol_grouped(genes)) %>%
   mutate(approved_symbol = symbol_from_hgnc_id_grouped(hgnc_id)) %>%
-  select(approved_symbol, hgnc_id, gene_name_reported = Genes, source = Source, panel = Panel)
+  select(approved_symbol, hgnc_id, gene_name_reported = genes, source = Source, panel = Panel)
 
 ############################################
 
