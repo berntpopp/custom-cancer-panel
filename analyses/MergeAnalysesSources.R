@@ -34,7 +34,9 @@ analyses_paths <- c("00_InhousePanels/results/",
   "01_PanelApp/results/",
   "02_HPO/results/",
   "03_DiagnosticPanels/results/",
-  "04_COSMIC/results/")
+  "04_COSMIC/results/",
+  "A_IncidentalFindings/results/",
+  "B_ManualCuration/results/")
 
 # find all CSV files in results folders and filter
 # select only genes files
@@ -71,22 +73,27 @@ results_genes <- results_csv_table %>%
     ))) %>%
   ungroup() %>%
   select(analysis, genes_list) %>%
-  unnest(genes_list)
+  unnest(genes_list) %>%
+  # following is a hack to identify cancer analyses
+  mutate(cancer_analysis = str_detect(analysis, "^[0-9][0-9].+"))
 
 # generate wide table and compute
 # evidence_count = sum of lists where the source_evidence is TRUE
 # list_count = sum lists where gene is found (source_evidence is TRUE or FALSE)
 results_genes_wider <- results_genes %>%
-  select(approved_symbol, hgnc_id, analysis, source_evidence) %>%
+  select(approved_symbol, hgnc_id, analysis, source_evidence, cancer_analysis) %>%
   group_by(approved_symbol, hgnc_id) %>%
-  mutate(evidence_count = sum(source_evidence == TRUE)) %>%
+  mutate(evidence_count = sum(source_evidence == TRUE & cancer_analysis == TRUE)) %>%
   mutate(list_count =
-    sum(source_evidence == TRUE | source_evidence == FALSE)) %>%
+    sum((source_evidence == TRUE | source_evidence == FALSE) & cancer_analysis == TRUE)) %>%
   ungroup %>%
+  select(-cancer_analysis) %>%
   pivot_wider(
     names_from = analysis,
     values_from = source_evidence
-  )
+  ) %>%
+  unique() %>%
+  mutate(include = (evidence_count > 1 | A_IncidentalFindings == TRUE | B_ManualCuration == TRUE))
 
 ############################################
 
