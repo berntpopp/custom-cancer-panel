@@ -1,0 +1,2 @@
+name	type	link
+acmg	html	https://www.ncbi.nlm.nih.gov/clinvar/docs/acmg/
