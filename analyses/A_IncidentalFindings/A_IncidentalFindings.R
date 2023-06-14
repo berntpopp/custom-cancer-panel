@@ -70,14 +70,16 @@ incidental_findings_full_genes <- incidental_findings_full %>%
   html_table()
 
 incidental_findings_full_genes_normalize <- incidental_findings_full_genes[[1]] %>%
-  select(Genes = `Gene via GTR`) %>%
-  mutate(Genes = str_remove_all(Genes, " .+")) %>%
+  select(genes = `Gene via GTR`) %>%
+  mutate(genes = str_remove_all(genes, " .+")) %>%
   unique() %>%
   mutate(Panel = "incidental_findings") %>%
   mutate(Source = url) %>%
-  mutate(hgnc_id = hgnc_id_from_symbol_grouped(Genes)) %>%
+  mutate(hgnc_id = hgnc_id_from_symbol_grouped(genes)) %>%
   mutate(approved_symbol = symbol_from_hgnc_id_grouped(hgnc_id)) %>%
-  select(approved_symbol, hgnc_id, gene_name_reported = Genes, source = Source, panel = Panel)
+  mutate(source_count = 1) %>%
+  mutate(source_evidence = TRUE) %>%
+  select(approved_symbol, hgnc_id, gene_name_reported = genes, source = Source, source_count, source_evidence)
 ############################################
 
 

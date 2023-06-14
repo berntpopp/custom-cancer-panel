@@ -2,7 +2,7 @@
 ## load libraries
 library(readxl)
 library(tidyverse)
-library(jsonlite) # needed for api calls
+library(jsonlite) # needed for api calls in HGNC functions
 library(config) # needed for config loading
 ############################################
 
@@ -35,8 +35,6 @@ source("../functions/hgnc-functions.R", local = TRUE)
 
 
 ############################################
-## download web urls
-
 # load the list of established local custom cancer panels
 # TODO: read all files and combine into one table
 leipzig_cancer_v6_list <- read_excel("data/Leipzig-Cancer_v6_gene-list.xlsx")
