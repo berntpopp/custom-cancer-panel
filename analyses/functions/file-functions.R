@@ -1,0 +1,116 @@
+require(tidyverse)
+require(readr)
+require(stringr)
+require(fs)
+require(lubridate)
+
+
+#' Check the age of the most recent file in a directory
+#'
+#' This function checks the age of the most recent file with a given basename in a
+#' specified directory. It returns TRUE if the newest file is younger than the
+#' specified duration (in months), and FALSE otherwise.
+#'
+#' @param file_basename A string. The basename of the files to check.
+#' This should be in the format "filename.", e.g. "hpo_list_kidney."
+#'
+#' @param folder A string. The directory where the files are located.
+#'
+#' @param months A numeric. The number of months to compare the file's age with.
+#'
+#' @return A logical. Returns TRUE if the most recent file is younger than the
+#' specified number of months, and FALSE otherwise.
+#'
+#' @examples
+#' \dontrun{
+#' check_file_age("hpo_list_kidney", "shared/", 1)
+#' }
+#'
+#' @importFrom fs dir_ls
+#' @importFrom stringr str_extract
+#' @importFrom lubridate as.Date interval months
+#'
+#' @export
+check_file_age <- function(file_basename, folder, months) {
+
+  # Construct the regex pattern for the files
+  pattern <- paste0(file_basename, "\\.\\d{4}-\\d{2}-\\d{2}")
+
+  # Get the list of files
+  files <- dir_ls(folder, regexp = pattern)
+
+  # If there are no files, we set the time to the start of Unix epoch 
+  if (length(files) == 0) {
+    newest_date <- as.Date("1970-01-01")
+  } else {
+    # Extract the dates from the file names
+    dates <- str_extract(files, "\\d{4}-\\d{2}-\\d{2}")
+
+    # Convert the dates to Date objects
+    dates <- as.Date(dates)
+
+    # Get the newest date
+    newest_date <- max(dates, na.rm = TRUE)
+  }
+
+  # Get the current date
+  current_date <- Sys.Date()
+
+  # Compute the difference in months between the current time and the newest file time
+  time_diff <- interval(newest_date, current_date) / months(1)
+
+  # Return TRUE if the newest file is older than the specified number of months, and FALSE otherwise
+  return(time_diff < months)
+}
+
+
+#' Get the name of the most recent file in a directory
+#'
+#' This function gets the name of the most recent file with a given basename in a
+#' specified directory. It returns the full name of the most recent file.
+#'
+#' @param file_basename A string. The basename of the files to check.
+#' This should be in the format "filename.", e.g. "hpo_list_kidney."
+#'
+#' @param folder A string. The directory where the files are located.
+#'
+#' @return A string. Returns the full name of the most recent file.
+#'
+#' @examples
+#' \dontrun{
+#' get_newest_file("hpo_list_kidney", "shared/")
+#' }
+#'
+#' @importFrom fs dir_ls
+#' @importFrom stringr str_extract
+#' @importFrom lubridate as.Date
+#'
+#' @export
+get_newest_file <- function(file_basename, folder) {
+
+  # Construct the regex pattern for the files
+  pattern <- paste0(file_basename, "\\.\\d{4}-\\d{2}-\\d{2}")
+
+  # Get the list of files
+  files <- dir_ls(folder, regexp = pattern)
+
+  # If there are no files, return NULL
+  if (length(files) == 0) {
+    return(NULL)
+  } else {
+    # Extract the dates from the file names
+    dates <- str_extract(files, "\\d{4}-\\d{2}-\\d{2}")
+
+    # Convert the dates to Date objects
+    dates <- as.Date(dates)
+
+    # Get the newest date
+    newest_date <- max(dates, na.rm = TRUE)
+
+    # Get the file(s) with the newest date
+    newest_files <- files[dates == newest_date]
+
+    # Return the full name of the most recent file
+    return(newest_files)
+  }
+}
