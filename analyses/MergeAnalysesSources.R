@@ -3,6 +3,7 @@
 library(tidyverse)  ## needed for general table operations
 library(readr)  ## needed to read files
 library(tools)  ## needed for checksums
+library("R.utils")  ## gzip downloaded and result files
 ############################################
 
 
@@ -13,8 +14,6 @@ project_name <- "custom-cancer-panel"
 script_path <- "/analyses/"
 
 ## read configs
-config_vars_proj <- config::get(file = Sys.getenv("CONFIG_FILE"),
-    config = "default")
 config_vars_proj <- config::get(file = Sys.getenv("CONFIG_FILE"),
     config = project_topic)
 
@@ -42,7 +41,7 @@ analyses_paths <- c("G00_InhousePanels/results/",
 # select only genes files
 # select newest file
 results_csv_table <- list.files(path = analyses_paths,
-    pattern = ".csv",
+    pattern = ".csv.gz",
     full.names = TRUE) %>%
   as_tibble() %>%
   separate(value, c("analysis", "path", "file"), sep = "\\/") %>%
@@ -109,6 +108,9 @@ write_csv(results_genes_wider,
     creation_date,
     ".csv"),
   na = "NULL")
+
+gzip(paste0("merged/CancerPanel_MergeAnalysesSources.", creation_date, ".csv"),
+  overwrite = TRUE)
 
 # TODO: add source file checksums and date as output table
 ############################################
