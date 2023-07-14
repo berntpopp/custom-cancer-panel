@@ -74,7 +74,7 @@ results_genes <- results_csv_table %>%
   select(analysis, genes_list) %>%
   unnest(genes_list) %>%
   # following is a hack to identify cancer analyses
-  mutate(cancer_analysis = str_detect(analysis, "^[0-9][0-9].+"))
+  mutate(cancer_analysis = str_detect(analysis, "^[SG][0-9][0-9].+"))
 
 # generate wide table and compute
 # evidence_count = sum of lists where the source_evidence is TRUE

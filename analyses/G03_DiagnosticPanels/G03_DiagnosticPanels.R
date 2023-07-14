@@ -443,6 +443,9 @@ write_csv(all_diagnostic_panels_genes_format,
     ".csv"),
   na = "NULL")
 
+gzip(paste0("results/G03_DiagnosticPanels_genes.", creation_date, ".csv"),
+  overwrite = TRUE)
+
 write_csv(diagnostic_panels,
   file = paste0("results/G03_DiagnosticPanels_list.",
     creation_date,
