@@ -136,7 +136,6 @@ fulgentgenetics_comprehensivecancer_full_genes <- fulgentgenetics_comprehensivec
   select(approved_symbol, hgnc_id, gene_name_reported = Genes, source = Source, panel = Panel)
 
 
-#TODO: fix this as it is not working
 ## 4) cegat_tumor_syndromes_panel
 url <- (diagnostic_panels %>%
   filter(diagnostic_panel_name == "cegat_tumor_syndromes_panel"))$filename_download
@@ -144,7 +143,7 @@ url <- (diagnostic_panels %>%
 cegat_tumor_syndromes_panel <- read_html(url)
 
 cegat_tumor_syndromes_panel_genes <- cegat_tumor_syndromes_panel %>%
-    html_nodes(xpath = '//h2[contains(text(),"Gene Directory")]//following::em') %>%
+    html_nodes(xpath = '//i[contains(text(),"Gene Directory")]//following::em') %>%
   html_text() %>%
   tibble(`Genes` = .) %>%
   separate_rows(., Genes, convert = TRUE) %>%
@@ -237,7 +236,6 @@ preventiongenetics_cancer_panel_genes <- preventiongenetics_cancer_panel_genes[[
   select(approved_symbol, hgnc_id, gene_name_reported = Genes, source = Source, panel = Panel)
 
 
-#TODO: fix this as it is not working
 ## 9) mayocliniclabs_xcp_hereditary_expanded_cancer_panel
 url <- (diagnostic_panels %>%
   filter(diagnostic_panel_name == "mayocliniclabs_xcp_hereditary_expanded_cancer_panel"))$filename_download
@@ -245,16 +243,14 @@ url <- (diagnostic_panels %>%
 mayocliniclabs_xcp_hereditary_expanded_cancer_panel <- read_html(url)
 
 mayocliniclabs_xcp_hereditary_expanded_cancer_panel_genes <- mayocliniclabs_xcp_hereditary_expanded_cancer_panel %>%
-    html_nodes(xpath = '//span[contains(text(),"Genes analyzed:")]') %>%
+    html_nodes(xpath = '//i') %>%
   html_text() %>%
-  str_remove_all("Genes analyzed: ") %>%
-  str_remove_all(" \\(including promoters 1A \\& 1B\\)") %>%
-  str_remove_all(" \\(upstream enhancer region duplication only\\)") %>%
-  str_remove_all(" \\(c\\.952G>A p\\.E318K variant only\\)") %>%
-  str_remove_all(" \\(including promoter\\)") %>%
-  str_remove_all(" \\(copy number variants only\\)") %>%
+  str_split(", ") %>%
   tibble(`Genes` = .) %>%
   separate_rows(., Genes, convert = TRUE) %>%
+  filter(Genes != "") %>%
+  filter(Genes != "A") %>%
+  unique() %>%
   mutate(Panel = "mayocliniclabs_xcp_hereditary_expanded_cancer_panel") %>%
   mutate(Source = url) %>%
   filter(Genes != "and") %>%
