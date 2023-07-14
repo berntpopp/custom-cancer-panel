@@ -206,3 +206,52 @@ gene_length_from_ensembl <- function(ensembl_id, reference = "hg19") {
 
   return(ensembl_id_list_return)
 }
+
+
+#' Retrieve transcript length from Ensembl transcript IDs
+#'
+#' This function retrieves the transcript length for the given Ensembl
+#' transcript IDs. The length is obtained from the specified reference genome.
+#'
+#' @param transcript_ids A vector or tibble containing the Ensembl transcript IDs.
+#' @param reference The reference genome to use (default: "hg19").
+#'
+#' @return A tibble with the Ensembl transcript IDs and their corresponding lengths.
+#'
+#' @examples
+#' transcript_ids <- c("ENST00000636930.2|NM_001374828.1", "ENST00000609686.4|NM_000834.5", "ENST00000464845.6|NM_003491.4")
+#' transcript_length_from_ensembl(transcript_ids, reference = "hg19")
+#'
+#' @export
+transcript_length_from_ensembl <- function(transcript_ids, reference = "hg19") {
+  transcript_id_list <- as_tibble(transcript_ids) %>%
+    dplyr::mutate(transcript_id = str_extract(value, "ENST\\d+")) %>%
+    dplyr::select(ensembl_transcript_id = transcript_id)
+
+  # define mart
+  mart_hg19 <- useMart("ensembl", host="grch37.ensembl.org")
+  mart_hg19 <- useDataset("hsapiens_gene_ensembl", mart_hg19)
+
+  mart_hg38 <- useMart("ensembl", host="ensembl.org")
+  mart_hg38 <- useDataset("hsapiens_gene_ensembl", mart_hg38)
+
+  if (reference == "hg19") {
+    mart <- useMart("ensembl", host = "grch37.ensembl.org")
+    mart <- useDataset("hsapiens_gene_ensembl", mart_hg19)
+  } else {
+    mart <- useMart("ensembl", host = "ensembl.org")
+    mart <- useDataset("hsapiens_gene_ensembl", mart_hg38)
+  }
+
+  attributes <- c("ensembl_transcript_id", "transcript_length")
+  filters <- c("ensembl_transcript_id")
+
+  values <- list(ensembl_transcript_id = transcript_id_list$ensembl_transcript_id)
+
+  transcript_lengths <- getBM(attributes=attributes, filters=filters, values=values, mart=mart)
+
+  transcript_id_list_return <- transcript_id_list %>%
+  left_join(transcript_lengths, by = ("ensembl_transcript_id"))
+
+  return(transcript_id_list_return)
+}
