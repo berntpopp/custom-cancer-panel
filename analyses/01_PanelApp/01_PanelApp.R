@@ -16,13 +16,11 @@ project_name <- "custom-cancer-panel"
 script_path <- "/analyses/01_PanelApp/"
 
 ## read configs
-config_vars <- config::get(file = Sys.getenv("CONFIG_FILE"),
-    config = "default")
-config_vars_path <- config::get(file = Sys.getenv("CONFIG_FILE"),
+config_vars_proj <- config::get(file = Sys.getenv("CONFIG_FILE"),
     config = project_topic)
 
 ## set working directory
-setwd(paste0(config_vars_path$projectsdir, project_name, script_path))
+setwd(paste0(config_vars_proj$projectsdir, project_name, script_path))
 
 ## set global options
 options(scipen = 999)
@@ -178,7 +176,6 @@ all_panelapp_genes_format <- all_panelapp_genes %>%
 
 ############################################
 ## save results
-# TODO: gzip csv result files
 creation_date <- strftime(as.POSIXlt(Sys.time(),
   "UTC",
   "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%d")

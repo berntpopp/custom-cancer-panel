@@ -16,13 +16,11 @@ project_name <- "custom-cancer-panel"
 script_path <- "/analyses/02_HPO/"
 
 ## read configs
-config_vars <- config::get(file = Sys.getenv("CONFIG_FILE"),
-    config = "default")
-config_vars_path <- config::get(file = Sys.getenv("CONFIG_FILE"),
+config_vars_proj <- config::get(file = Sys.getenv("CONFIG_FILE"),
     config = project_topic)
 
 ## set working directory
-setwd(paste0(config_vars_path$projectsdir, project_name, script_path))
+setwd(paste0(config_vars_proj$projectsdir, project_name, script_path))
 
 ## set global options
 options(scipen = 999)
@@ -34,44 +32,82 @@ options(scipen = 999)
 # hgnc functions
 source("../functions/hgnc-functions.R", local = TRUE)
 source("../functions/hpo-functions.R", local = TRUE)
+source("../functions/file-functions.R", local = TRUE)
 ############################################
 
 
 ############################################
 ## get all children of term neoplasm HP:0002664 and annotating them with name and definition.
 
-query_date <- strftime(as.POSIXlt(Sys.time(), "UTC", "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%d")
+current_date <- strftime(as.POSIXlt(Sys.time(), "UTC", "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%d")
 
-# define an empty list holding the HPO terms
-all_children_list <- list()
-
-# TODO: make this automatic for multiple terms and naming the output files
 # walk through the ontology tree and add all unique terms descending from
 # HP:0002664 (neoplasm)
-HPO_all_children_from_term("HP:0002664")
 
-# transform hte list into a tibble
-hpo_list <- all_children_list %>%
-  unlist() %>%
-  tibble(`term` = .) %>%
-  unique()
+if (check_file_age("hpo_list_neoplasm", "data/", 1)) {
+  hpo_list_neoplasm <- read_csv(get_newest_file("hpo_list_neoplasm", "data"))
+} else {
+  all_hpo_children_list_neoplasm <- HPO_all_children_from_term("HP:0002664")
+
+  # transform hte list into a tibble
+  hpo_list_neoplasm <- all_hpo_children_list_neoplasm %>%
+    unlist() %>%
+    tibble(`term` = .) %>%
+    unique() %>%
+    mutate(query_date = current_date)
+
+  write_csv(hpo_list_neoplasm,
+    file = paste0("data/hpo_list_neoplasm.",
+      current_date,
+      ".csv"),
+    na = "NULL")
+
+  gzip(paste0("data/hpo_list_neoplasm.", current_date, ".csv"),
+    overwrite = TRUE)
+}
 ############################################
 
 
 ############################################
 ## download all required database sources from HPO and OMIM
-file_date <- strftime(as.POSIXlt(Sys.time(), "UTC", "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%d")
+# we load and use the results of previous walks through the ontology tree if not older then 1 month
 
-# disease ontology annotations from HPO
-phenotype_hpoa_url <- "http://purl.obolibrary.org/obo/hp/hpoa/phenotype.hpoa"
-phenotype_hpoa_filename <- paste0("data/downloads/phenotype.", file_date, ".hpoa")
-download.file(phenotype_hpoa_url, phenotype_hpoa_filename, mode = "wb")
+if (check_file_age("phenotype", "data/", 1)) {
+  phenotype_hpoa_filename <- get_newest_file("phenotype", "data/")
+} else {
+  # TODO: compute date only once or somehow in config
+  file_date <- strftime(as.POSIXlt(Sys.time(), "UTC", "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%d")
 
-# OMIM links to genemap2 file needs to be set in config and applied for at
-# https://www.omim.org/downloads
-omim_genemap2_url <- config_vars$omim_genemap2_url
-omim_genemap2_filename <- paste0("data/downloads/omim_genemap2.", file_date, ".txt")
-download.file(omim_genemap2_url, omim_genemap2_filename, mode = "wb")
+  # disease ontology annotations from HPO
+  # TODO: this should be a config variable
+  phenotype_hpoa_url <- "http://purl.obolibrary.org/obo/hp/hpoa/phenotype.hpoa"
+
+  phenotype_hpoa_filename <- paste0("data/phenotype.",
+    file_date,
+    ".hpoa")
+
+  download.file(phenotype_hpoa_url, phenotype_hpoa_filename, mode = "wb")
+
+  gzip(phenotype_hpoa_filename,
+    overwrite = TRUE)
+}
+
+if (check_file_age("omim_genemap2", "data/", 1)) {
+  omim_genemap2_filename <- get_newest_file("omim_genemap2", "data/")
+} else {
+  # OMIM links to genemap2 file needs to be set in config and applied for at
+  # https://www.omim.org/downloads
+  omim_genemap2_url <- config_vars_proj$omim_genemap2_url
+
+  omim_genemap2_filename <- paste0("data/omim_genemap2.",
+    file_date,
+    ".txt")
+
+  download.file(omim_genemap2_url, omim_genemap2_filename, mode = "wb")
+
+  gzip(omim_genemap2_filename,
+    overwrite = TRUE)
+}
 ############################################
 
 
@@ -134,7 +170,7 @@ omim_genemap2 <- read_delim(omim_genemap2_filename, "\t",
     hpo_mode_of_inheritance_term_name == "Y-linked" ~ "Y-linked inheritance"))
 
 phenotype_hpoa_filter <- phenotype_hpoa %>%
-   filter(hpo_id %in% hpo_list$term) %>%
+   filter(hpo_id %in% hpo_list_neoplasm$term) %>%
    select(database_id, hpo_id) %>%
    unique() %>%
   group_by(database_id) %>%
@@ -174,7 +210,6 @@ hpo_gene_list <- phenotype_hpoa_filter %>%
 
 ############################################
 ## save results
-# TODO: gzip csv result files
 creation_date <- strftime(as.POSIXlt(Sys.time(),
   "UTC",
   "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%d")
@@ -185,12 +220,6 @@ write_csv(hpo_gene_list,
     ".csv"),
   na = "NULL")
 
-write_csv(hpo_list,
-  file = paste0("results/02_children-from-terms.",
-    creation_date,
-    ".csv"),
-  na = "NULL")
-
-gzip(paste0("results/02_children-from-terms.", creation_date, ".csv"),
+gzip(paste0("results/02_HPO_genes.", creation_date, ".csv"),
   overwrite = TRUE)
 ############################################

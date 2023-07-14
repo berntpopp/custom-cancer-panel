@@ -15,13 +15,11 @@ project_name <- "custom-cancer-panel"
 script_path <- "/analyses/00_InhousePanels/"
 
 ## read configs
-config_vars <- config::get(file = Sys.getenv("CONFIG_FILE"),
-    config = "default")
-config_vars_path <- config::get(file = Sys.getenv("CONFIG_FILE"),
+config_vars_proj <- config::get(file = Sys.getenv("CONFIG_FILE"),
     config = project_topic)
 
 ## set working directory
-setwd(paste0(config_vars_path$projectsdir, project_name, script_path))
+setwd(paste0(config_vars_proj$projectsdir, project_name, script_path))
 
 ## set global options
 options(scipen = 999)
@@ -37,7 +35,6 @@ source("../functions/hgnc-functions.R", local = TRUE)
 
 ############################################
 # load the list of established local custom cancer panels
-# TODO: read all files and combine into one table
 leipzig_cancer_v6_list <- read_excel("data/Leipzig-Cancer_v6_gene-list.xlsx")
 dresden_cancer_v1_list <- read_excel("data/Dresden-Cancer_v1_gene-list.xlsx")
 ############################################
@@ -89,7 +86,6 @@ all_inhouse_panels_genes_format <- all_inhouse_panels_genes %>%
 
 ############################################
 ## save results
-# TODO: gzip csv result files
 creation_date <- strftime(as.POSIXlt(Sys.time(),
   "UTC",
   "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%d")
