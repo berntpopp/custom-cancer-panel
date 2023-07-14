@@ -11,7 +11,7 @@ library("R.utils")  ## gzip downloaded and result files
 ## define relative script path
 project_topic <- "lb"
 project_name <- "custom-cancer-panel"
-script_path <- "/analyses/"
+script_path <- "/analyses/D_MergeAnalysesSources/"
 
 ## read configs
 config_vars_proj <- config::get(file = Sys.getenv("CONFIG_FILE"),
@@ -29,23 +29,24 @@ options(scipen = 999)
 ## load all analyses files and transform table
 
 # define analyses paths
-analyses_paths <- c("G00_InhousePanels/results/",
-  "G01_PanelApp/results/",
-  "G02_HPO/results/",
-  "G03_DiagnosticPanels/results/",
-  "S04_COSMIC/results/",
-  "A_IncidentalFindings/results/",
-  "B_ManualCuration/results/")
+analyses_paths <- c("/analyses/G00_InhousePanels/results/",
+  "/analyses/G01_PanelApp/results/",
+  "/analyses/G02_HPO/results/",
+  "/analyses/G03_DiagnosticPanels/results/",
+  "/analyses/S04_COSMIC/results/",
+  "/analyses/A_IncidentalFindings/results/",
+  "/analyses/B_ManualCuration/results/")
 
 # find all CSV files in results folders and filter
 # select only genes files
 # select newest file
-results_csv_table <- list.files(path = analyses_paths,
+results_csv_table <- list.files(path = paste0(config_vars_proj$projectsdir, project_name, analyses_paths),
     pattern = ".csv.gz",
     full.names = TRUE) %>%
   as_tibble() %>%
+  mutate(file_path = str_replace_all(value, paste0(config_vars_proj$projectsdir, project_name, "/analyses/"), "\\.\\.\\/")) %>%
+  mutate(value = str_replace_all(value, paste0(config_vars_proj$projectsdir, project_name, "/analyses/"), "")) %>%
   separate(value, c("analysis", "path", "file"), sep = "\\/") %>%
-  mutate(file_path = paste0(analysis, "/", path, "/", file)) %>%
   separate(file, c(NA, "analysis_date", NA), sep = "\\.") %>%
   mutate(results_file_id = row_number()) %>%
   mutate(md5sum_file = md5sum(file_path)) %>%
@@ -104,12 +105,12 @@ creation_date <- strftime(as.POSIXlt(Sys.time(),
   "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%d")
 
 write_csv(results_genes_wider,
-  file = paste0("merged/CancerPanel_MergeAnalysesSources.",
+  file = paste0("results/CancerPanel_MergeAnalysesSources.",
     creation_date,
     ".csv"),
   na = "NULL")
 
-gzip(paste0("merged/CancerPanel_MergeAnalysesSources.", creation_date, ".csv"),
+gzip(paste0("results/CancerPanel_MergeAnalysesSources.", creation_date, ".csv"),
   overwrite = TRUE)
 
 # TODO: add source file checksums and date as output table
