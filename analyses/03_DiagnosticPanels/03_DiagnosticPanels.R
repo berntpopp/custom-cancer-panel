@@ -9,6 +9,7 @@ library(curl)
 library(httr)
 library(config) # needed for config loading
 library(webdriver) # needed for headless browsing
+library("R.utils")  ## gzip downloaded and result files
 ############################################
 
 
@@ -137,6 +138,7 @@ fulgentgenetics_comprehensivecancer_full_genes <- fulgentgenetics_comprehensivec
   select(approved_symbol, hgnc_id, gene_name_reported = Genes, source = Source, panel = Panel)
 
 
+#TODO: fix this as it is not working
 ## 4) cegat_tumor_syndromes_panel
 url <- (diagnostic_panels %>%
   filter(diagnostic_panel_name == "cegat_tumor_syndromes_panel"))$filename_download
@@ -237,6 +239,7 @@ preventiongenetics_cancer_panel_genes <- preventiongenetics_cancer_panel_genes[[
   select(approved_symbol, hgnc_id, gene_name_reported = Genes, source = Source, panel = Panel)
 
 
+#TODO: fix this as it is not working
 ## 9) mayocliniclabs_xcp_hereditary_expanded_cancer_panel
 url <- (diagnostic_panels %>%
   filter(diagnostic_panel_name == "mayocliniclabs_xcp_hereditary_expanded_cancer_panel"))$filename_download
@@ -452,4 +455,7 @@ write_csv(diagnostic_panels,
     creation_date,
     ".csv"),
   na = "NULL")
+
+gzip(paste0("results/03_DiagnosticPanels_list.", creation_date, ".csv"),
+  overwrite = TRUE)
 ############################################

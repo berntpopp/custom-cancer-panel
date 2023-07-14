@@ -4,6 +4,7 @@ library(readxl)
 library(tidyverse)
 library(jsonlite) # needed for api calls in HGNC functions
 library(config) # needed for config loading
+library("R.utils")  ## gzip downloaded and result files
 ############################################
 
 
@@ -98,4 +99,7 @@ write_csv(all_inhouse_panels_genes_format,
     creation_date,
     ".csv"),
   na = "NULL")
+
+gzip(paste0("results/00_InhousePanels_genes.", creation_date, ".csv"),
+  overwrite = TRUE)
 ############################################

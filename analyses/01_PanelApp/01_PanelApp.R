@@ -5,6 +5,7 @@ library(tidyverse)
 library(rvest)
 library(jsonlite)
 library(config)
+library("R.utils")  ## gzip downloaded and result files
 ############################################
 
 
@@ -193,4 +194,7 @@ write_csv(all_panelapp_genes_format,
     creation_date,
     ".csv"),
   na = "NULL")
+
+gzip(paste0("results/01_PanelApp_genes.", creation_date, ".csv"),
+  overwrite = TRUE)
 ############################################

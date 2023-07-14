@@ -5,6 +5,7 @@ library(jsonlite)  ##needed for HGNC requests
 library(rvest)    ##needed for scraping
 library(httr)    ##needed for scraping
 library(config) # needed for config loading
+library("R.utils")  ## gzip downloaded and result files
 ############################################
 
 
@@ -189,4 +190,7 @@ write_csv(hpo_list,
     creation_date,
     ".csv"),
   na = "NULL")
+
+gzip(paste0("results/02_children-from-terms.", creation_date, ".csv"),
+  overwrite = TRUE)
 ############################################

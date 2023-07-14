@@ -4,6 +4,7 @@ library(readxl)
 library(tidyverse)
 library(jsonlite) # needed for api calls in HGNC functions
 library(config) # needed for config loading
+library("R.utils")  ## gzip downloaded and result files
 ############################################
 
 
@@ -67,4 +68,7 @@ write_csv(manual_gene_list_genes,
     creation_date,
     ".csv"),
   na = "NULL")
+
+gzip(paste0("results/B_ManualCuration_genes.", creation_date, ".csv"),
+  overwrite = TRUE)
 ############################################

@@ -9,6 +9,7 @@ library(curl)
 library(httr)
 library(config) # needed for config loading
 library(webdriver) # needed for headless browsing
+library("R.utils")  ## gzip downloaded and result files
 ############################################
 
 
@@ -95,4 +96,7 @@ write_csv(incidental_findings_full_genes_normalize,
     creation_date,
     ".csv"),
   na = "NULL")
+
+gzip(paste0("results/A_IncidentalFindings_genes.", creation_date, ".csv"),
+  overwrite = TRUE)
 ############################################

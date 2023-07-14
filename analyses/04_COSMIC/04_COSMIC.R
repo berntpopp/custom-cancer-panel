@@ -4,6 +4,7 @@ library(tidyverse)  ##needed for general table operations
 library(jsonlite)  ##needed for HGNC requests
 library(config) # needed for config loading
 library(rvest)
+library("R.utils")  ## gzip downloaded and result files
 ############################################
 
 
@@ -127,4 +128,7 @@ write_csv(cosmic_gene_list,
     creation_date,
     ".csv"),
   na = "NULL")
+
+gzip(paste0("results/04_COSMIC_genes.", creation_date, ".csv"),
+  overwrite = TRUE)
 ############################################
