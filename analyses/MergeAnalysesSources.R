@@ -30,11 +30,11 @@ options(scipen = 999)
 ## load all analyses files and transform table
 
 # define analyses paths
-analyses_paths <- c("00_InhousePanels/results/",
-  "01_PanelApp/results/",
-  "02_HPO/results/",
-  "03_DiagnosticPanels/results/",
-  "04_COSMIC/results/",
+analyses_paths <- c("G00_InhousePanels/results/",
+  "G01_PanelApp/results/",
+  "G02_HPO/results/",
+  "G03_DiagnosticPanels/results/",
+  "S04_COSMIC/results/",
   "A_IncidentalFindings/results/",
   "B_ManualCuration/results/")
 

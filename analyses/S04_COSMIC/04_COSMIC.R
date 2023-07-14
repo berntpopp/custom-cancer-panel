@@ -12,7 +12,7 @@ library("R.utils")  ## gzip downloaded and result files
 ## define relative script path
 project_topic <- "lb"
 project_name <- "custom-cancer-panel"
-script_path <- "/analyses/04_COSMIC/"
+script_path <- "/analyses/S04_COSMIC/"
 
 ## read configs
 config_vars_proj <- config::get(file = Sys.getenv("CONFIG_FILE"),
@@ -121,11 +121,11 @@ creation_date <- strftime(as.POSIXlt(Sys.time(),
   "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%d")
 
 write_csv(cosmic_gene_list,
-  file = paste0("results/04_COSMIC_genes.",
+  file = paste0("results/S04_COSMIC_genes.",
     creation_date,
     ".csv"),
   na = "NULL")
 
-gzip(paste0("results/04_COSMIC_genes.", creation_date, ".csv"),
+gzip(paste0("results/S04_COSMIC_genes.", creation_date, ".csv"),
   overwrite = TRUE)
 ############################################

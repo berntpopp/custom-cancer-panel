@@ -13,7 +13,7 @@ library("R.utils")  ## gzip downloaded and result files
 ## define relative script path
 project_topic <- "lb"
 project_name <- "custom-cancer-panel"
-script_path <- "/analyses/02_HPO/"
+script_path <- "/analyses/G02_HPO/"
 
 ## read configs
 config_vars_proj <- config::get(file = Sys.getenv("CONFIG_FILE"),
@@ -215,11 +215,11 @@ creation_date <- strftime(as.POSIXlt(Sys.time(),
   "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%d")
 
 write_csv(hpo_gene_list,
-  file = paste0("results/02_HPO_genes.",
+  file = paste0("results/G02_HPO_genes.",
     creation_date,
     ".csv"),
   na = "NULL")
 
-gzip(paste0("results/02_HPO_genes.", creation_date, ".csv"),
+gzip(paste0("results/G02_HPO_genes.", creation_date, ".csv"),
   overwrite = TRUE)
 ############################################
