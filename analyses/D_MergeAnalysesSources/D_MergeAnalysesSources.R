@@ -33,7 +33,7 @@ analyses_paths <- c("/analyses/G00_InhousePanels/results/",
   "/analyses/G01_PanelApp/results/",
   "/analyses/G02_HPO/results/",
   "/analyses/G03_DiagnosticPanels/results/",
-  "/analyses/S04_COSMIC/results/",
+  "/analyses/S01_COSMIC/results/",
   "/analyses/A_IncidentalFindings/results/",
   "/analyses/B_ManualCuration/results/")
 

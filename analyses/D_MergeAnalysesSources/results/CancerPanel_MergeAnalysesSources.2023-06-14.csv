@@ -1,4 +1,4 @@
-approved_symbol,hgnc_id,evidence_count,list_count,G00_InhousePanels,G01_PanelApp,G02_HPO,G03_DiagnosticPanels,S04_COSMIC,A_IncidentalFindings,B_ManualCuration,include
+approved_symbol,hgnc_id,evidence_count,list_count,G00_InhousePanels,G01_PanelApp,G02_HPO,G03_DiagnosticPanels,S01_COSMIC,A_IncidentalFindings,B_ManualCuration,include
 ABRAXAS1,25829,2,2,TRUE,NULL,NULL,TRUE,NULL,NULL,NULL,TRUE
 ACD,25070,3,3,TRUE,TRUE,NULL,TRUE,NULL,NULL,NULL,TRUE
 AIP,358,4,4,TRUE,TRUE,TRUE,TRUE,NULL,NULL,NULL,TRUE
