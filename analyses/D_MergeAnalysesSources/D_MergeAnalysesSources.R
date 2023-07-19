@@ -75,12 +75,25 @@ results_genes <- results_csv_table %>%
   select(analysis, genes_list) %>%
   unnest(genes_list) %>%
   # following is a hack to identify cancer analyses
-  mutate(cancer_analysis = str_detect(analysis, "^[SG][0-9][0-9].+"))
+  mutate(cancer_analysis = str_detect(analysis, "^[SG][0-9][0-9]_.+")) %>%
+  # compute type of gene list from analysis name
+  mutate(list_type =
+    case_when(
+      str_detect(analysis, "^[S][0-9][0-9]_.+") ~
+        "somatic",
+      str_detect(analysis, "^[G][0-9][0-9]_.+") ~
+        "germline",
+      str_detect(analysis, "^[A-z]_.+") ~
+        "other",
+    )
+  )
 
-# generate wide table and compute
+
+# germline: generate wide table and compute
 # evidence_count = sum of lists where the source_evidence is TRUE
 # list_count = sum lists where gene is found (source_evidence is TRUE or FALSE)
-results_genes_wider <- results_genes %>%
+results_genes_germline_wider <- results_genes %>%
+  filter(list_type == "germline" | list_type == "other") %>%
   select(approved_symbol, hgnc_id, analysis, source_evidence, cancer_analysis) %>%
   group_by(approved_symbol, hgnc_id) %>%
   mutate(evidence_count = sum(source_evidence == TRUE & cancer_analysis == TRUE)) %>%
