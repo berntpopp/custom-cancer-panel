@@ -26,6 +26,13 @@ options(scipen = 999)
 
 
 ############################################
+# load global functions
+# file functions
+source("../functions/file-functions.R", local = TRUE)
+############################################
+
+
+############################################
 ## load all analyses files and transform table
 
 # define analyses paths
@@ -136,6 +143,49 @@ results_genes_somatic_wider <- results_genes %>%
     by = "approved_symbol") %>%
   mutate(germline_include = ifelse(is.na(germline_include), FALSE, TRUE))
 
+############################################
+
+
+############################################
+## load annotation file
+
+# define annotation file path
+annotation_path <- "../C_AnnotationHGNC/results/"
+
+# get newest annotation file
+annotation_file <- get_newest_file("non_alt_loci_set_coordinates_length", annotation_path)
+
+# load annotation file
+# remove "HGNC:" string from hgnc_id
+hgnc_annotation <- read_csv(annotation_file,
+    col_names = TRUE) %>%
+  select(symbol, hgnc_id, hg19_genomic_size, hg38_genomic_size, hg19_cds_size_mane, hg38_cds_size_mane) %>%
+  mutate(hgnc_id = str_replace_all(hgnc_id, "HGNC:", ""))
+
+# compute panel target size germine
+results_genes_germline_target_size <- results_genes_germline_wider %>%
+  filter(include == TRUE) %>%
+  left_join(hgnc_annotation,
+    by = "hgnc_id") %>%
+  mutate(target_size = ifelse(is.na(hg19_cds_size_mane), hg38_cds_size_mane, hg19_cds_size_mane)) %>%
+  mutate(target_size = ifelse(is.na(target_size), hg19_genomic_size, target_size))
+
+# compute panel target size somatic non-germline
+results_genes_somatic_target_size <- results_genes_somatic_wider %>%
+  filter(include == TRUE) %>%
+  filter(germline_include == FALSE) %>%
+  left_join(hgnc_annotation,
+    by = "hgnc_id") %>%
+  mutate(target_size = ifelse(is.na(hg19_cds_size_mane), hg38_cds_size_mane, hg19_cds_size_mane)) %>%
+  mutate(target_size = ifelse(is.na(target_size), hg19_genomic_size, target_size))
+
+# sum target size cds germline
+results_genes_germline_target_size_sum <- results_genes_germline_target_size %>%
+  summarise(target_size = sum(target_size, na.rm = TRUE))
+
+# sum target size cds somatic non-germline
+results_genes_somatic_target_size_sum <- results_genes_somatic_target_size %>%
+  summarise(target_size = sum(target_size, na.rm = TRUE))
 ############################################
 
 

@@ -132,6 +132,7 @@ non_alt_loci_set_coordinates <- non_alt_loci_set_string %>%
 
 ############################################
 ## annotate genomic and CDS size
+# TODO: add mane transcript length (currently only cds length)
 non_alt_loci_set_coordinates_length <- non_alt_loci_set_coordinates %>%
   mutate(hg19_genomic_size_from_symbol = gene_length_from_symbol(symbol, reference = "hg19")) %>%
   mutate(hg19_genomic_size_from_ensembl = gene_length_from_ensembl(ensembl_gene_id, reference = "hg19")) %>%
