@@ -33,7 +33,9 @@ analyses_paths <- c("/analyses/G00_InhousePanels/results/",
   "/analyses/G01_PanelApp/results/",
   "/analyses/G02_HPO/results/",
   "/analyses/G03_DiagnosticPanels/results/",
+  "/analyses/S00_InhousePanels/results/",
   "/analyses/S01_COSMIC/results/",
+  "/analyses/S02_CommercialPanels/results/",
   "/analyses/A_IncidentalFindings/results/",
   "/analyses/B_ManualCuration/results/")
 
@@ -108,6 +110,32 @@ results_genes_germline_wider <- results_genes %>%
   unique() %>%
   mutate(include = (evidence_count > 1 | A_IncidentalFindings == TRUE | B_ManualCuration == TRUE))
 
+
+# somatic: generate wide table and compute
+# evidence_count = sum of lists where the source_evidence is TRUE
+# list_count = sum lists where gene is found (source_evidence is TRUE or FALSE)
+# include information if gene is included in the germline list
+results_genes_somatic_wider <- results_genes %>%
+  filter(list_type == "somatic") %>%
+  select(approved_symbol, hgnc_id, analysis, source_evidence, cancer_analysis) %>%
+  group_by(approved_symbol, hgnc_id) %>%
+  mutate(evidence_count = sum(source_evidence == TRUE & cancer_analysis == TRUE)) %>%
+  mutate(list_count =
+    sum((source_evidence == TRUE | source_evidence == FALSE) & cancer_analysis == TRUE)) %>%
+  ungroup %>%
+  select(-cancer_analysis) %>%
+  pivot_wider(
+    names_from = analysis,
+    values_from = source_evidence
+  ) %>%
+  unique() %>%
+  mutate(include = (evidence_count > 1)) %>%
+  left_join(results_genes_germline_wider %>%
+    select(approved_symbol, include) %>%
+    rename(germline_include = include),
+    by = "approved_symbol") %>%
+  mutate(germline_include = ifelse(is.na(germline_include), FALSE, TRUE))
+
 ############################################
 
 
@@ -117,13 +145,22 @@ creation_date <- strftime(as.POSIXlt(Sys.time(),
   "UTC",
   "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%d")
 
-write_csv(results_genes_wider,
-  file = paste0("results/CancerPanel_MergeAnalysesSources.",
+write_csv(results_genes_germline_wider,
+  file = paste0("results/CancerPanel_Germline_MergeAnalysesSources.",
     creation_date,
     ".csv"),
   na = "NULL")
 
-gzip(paste0("results/CancerPanel_MergeAnalysesSources.", creation_date, ".csv"),
+gzip(paste0("results/CancerPanel_Germline_MergeAnalysesSources.", creation_date, ".csv"),
+  overwrite = TRUE)
+
+write_csv(results_genes_germline_wider,
+  file = paste0("results/CancerPanel_Somatic_MergeAnalysesSources.",
+    creation_date,
+    ".csv"),
+  na = "NULL")
+
+gzip(paste0("results/CancerPanel_Somatic_MergeAnalysesSources.", creation_date, ".csv"),
   overwrite = TRUE)
 
 # TODO: add source file checksums and date as output table
