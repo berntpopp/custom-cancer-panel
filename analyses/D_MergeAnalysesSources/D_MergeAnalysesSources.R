@@ -182,13 +182,15 @@ hgnc_annotation <- read_csv(annotation_file,
   select(symbol, hgnc_id, hg19_genomic_size, hg38_genomic_size, hg19_cds_size_mane, hg38_cds_size_mane) %>%
   mutate(hgnc_id = str_replace_all(hgnc_id, "HGNC:", ""))
 
-# compute panel target size germine
+# compute panel target size germline
+# use genomic size if genomic_include is TRUE
 results_genes_germline_target_size <- results_genes_germline_wider %>%
   filter(include == TRUE) %>%
   left_join(hgnc_annotation,
     by = "hgnc_id") %>%
   mutate(target_size = ifelse(is.na(hg19_cds_size_mane), hg38_cds_size_mane, hg19_cds_size_mane)) %>%
-  mutate(target_size = ifelse(is.na(target_size), hg19_genomic_size, target_size))
+  mutate(target_size = ifelse(is.na(target_size), hg19_genomic_size, target_size)) %>%
+  mutate(target_size_plus_genomic = ifelse(genomic_include == TRUE, hg19_genomic_size, target_size))
 
 # compute panel target size somatic non-germline
 results_genes_somatic_target_size <- results_genes_somatic_wider %>%
@@ -202,6 +204,9 @@ results_genes_somatic_target_size <- results_genes_somatic_wider %>%
 # sum target size cds germline
 results_genes_germline_target_size_sum <- results_genes_germline_target_size %>%
   summarise(target_size = sum(target_size, na.rm = TRUE))
+
+results_genes_germline_target_size_plus_genomic_sum <- results_genes_germline_target_size %>%
+  summarise(target_size_plus_genomic = sum(target_size_plus_genomic, na.rm = TRUE))
 
 # sum target size cds somatic non-germline
 results_genes_somatic_target_size_sum <- results_genes_somatic_target_size %>%
