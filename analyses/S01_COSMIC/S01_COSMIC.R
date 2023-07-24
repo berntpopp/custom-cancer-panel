@@ -103,7 +103,7 @@ cosmic_gene_list <- cosmic_census_table_normalize %>%
   TRUE ~ 0)) %>%
   mutate(source = paste0("somatic: ", tumour_types_somatic, "; ", "germline: ", tumour_types_germline)) %>%
   mutate(source_count = over_500_mut + germline_yes + somatic_yes + tier_score) %>%
-  mutate(source_evidence = (source_count > 3)) %>%
+  mutate(source_evidence = (source_count > 2)) %>%
   mutate(approved_symbol = symbol_from_hgnc_id_grouped(hgnc_id)) %>%
   select(approved_symbol,
   hgnc_id,
