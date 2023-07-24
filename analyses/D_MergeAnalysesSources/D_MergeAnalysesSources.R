@@ -4,6 +4,7 @@ library(tidyverse)  ## needed for general table operations
 library(readr)  ## needed to read files
 library(tools)  ## needed for checksums
 library("R.utils")  ## gzip downloaded and result files
+library(readxl)
 ############################################
 
 
@@ -96,11 +97,20 @@ results_genes <- results_csv_table %>%
         "other",
     )
   )
+############################################
 
 
+############################################
+# load the list of genes to be genomically covered
+genomic_gene_list <- read_excel("data/genomic_gene-list.xlsx")
+############################################
+
+
+############################################
 # germline: generate wide table and compute
 # evidence_count = sum of lists where the source_evidence is TRUE
 # list_count = sum lists where gene is found (source_evidence is TRUE or FALSE)
+# add information if gene is included in the genomic gene list
 results_genes_germline_wider <- results_genes %>%
   filter(list_type == "germline" | list_type == "other") %>%
   select(approved_symbol, hgnc_id, analysis, source_evidence, cancer_analysis) %>%
@@ -115,7 +125,12 @@ results_genes_germline_wider <- results_genes %>%
     values_from = source_evidence
   ) %>%
   unique() %>%
-  mutate(include = (evidence_count > 1 | A_IncidentalFindings == TRUE | B_ManualCuration == TRUE))
+  mutate(include = (evidence_count > 1 | A_IncidentalFindings == TRUE | B_ManualCuration == TRUE)) %>%
+  left_join(genomic_gene_list %>%
+    select(approved_symbol, include) %>%
+    rename(genomic_include = include),
+    by = "approved_symbol") %>%
+  mutate(genomic_include = ifelse(is.na(genomic_include), FALSE, TRUE))
 
 
 # somatic: generate wide table and compute
@@ -141,6 +156,11 @@ results_genes_somatic_wider <- results_genes %>%
     select(approved_symbol, include) %>%
     rename(germline_include = include),
     by = "approved_symbol") %>%
+  left_join(genomic_gene_list %>%
+    select(approved_symbol, include) %>%
+    rename(genomic_include = include),
+    by = "approved_symbol") %>%
+  mutate(genomic_include = ifelse(is.na(genomic_include), FALSE, TRUE)) %>%
   mutate(germline_include = ifelse(is.na(germline_include), FALSE, TRUE))
 
 ############################################
