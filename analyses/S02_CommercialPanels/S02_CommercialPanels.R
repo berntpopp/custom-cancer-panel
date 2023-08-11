@@ -189,10 +189,11 @@ panel <- "illumina_comprehensive_panel_v3"
 filename <- (commercial_panels %>%
   filter(panel_name == panel))$filename_download
 
-illumina_comprehensive_panel_v3 <- read_delim(filename, 
+illumina_comprehensive_panel_v3 <- read_delim(filename,
   delim = "\t", escape_double = FALSE,
   col_names = FALSE, trim_ws = TRUE) %>%
   select(gene = X4) %>%
+  mutate(gene = str_remove_all(gene, "OBRA_")) %>%
   separate(gene, sep = "_", into = c("gene", NA)) %>%
   mutate(gene = str_replace_all(gene, "SP", "SP1")) %>% 
   unique() %>%

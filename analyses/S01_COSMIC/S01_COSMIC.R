@@ -37,6 +37,7 @@ source("../functions/hgnc-functions.R", local = TRUE)
 ## download all required database sources from HPO and OMIM
 file_date <- strftime(as.POSIXlt(Sys.time(), "UTC", "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%d")
 
+# TODO: add check if files already exist
 # COSMIC census TSV file
 cosmic_census_url <- "https://cancer.sanger.ac.uk/cosmic/census/all?home=y&name=all&tier=&export=json"
 cosmic_census_filename <- paste0("data/downloads/cosmic_census.", file_date, ".tsv")

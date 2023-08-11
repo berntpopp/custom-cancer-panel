@@ -42,6 +42,7 @@ file_date <- strftime(as.POSIXlt(Sys.time(),
 
 # define link and file name
 # TODO: this should be a config variable
+# TODO: add check if files already exist
 hgnc_link <-
   "http://ftp.ebi.ac.uk/pub/databases/genenames/hgnc/tsv/non_alt_loci_set.txt"
 
