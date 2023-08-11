@@ -195,7 +195,6 @@ results_genes_germline_target_size <- results_genes_germline_wider %>%
 # compute panel target size somatic non-germline
 results_genes_somatic_target_size <- results_genes_somatic_wider %>%
   filter(include == TRUE) %>%
-  filter(germline_include == FALSE) %>%
   left_join(hgnc_annotation,
     by = "hgnc_id") %>%
   mutate(target_size = ifelse(is.na(hg19_cds_size_mane), hg38_cds_size_mane, hg19_cds_size_mane)) %>%
@@ -208,8 +207,13 @@ results_genes_germline_target_size_sum <- results_genes_germline_target_size %>%
 results_genes_germline_target_size_plus_genomic_sum <- results_genes_germline_target_size %>%
   summarise(target_size_plus_genomic = sum(target_size_plus_genomic, na.rm = TRUE))
 
-# sum target size cds somatic non-germline
+# sum target size cds somatic
 results_genes_somatic_target_size_sum <- results_genes_somatic_target_size %>%
+  summarise(target_size = sum(target_size, na.rm = TRUE))
+
+# sum target size cds somatic non-germline
+results_genes_somatic_target_size_sum_non_germline <- results_genes_somatic_target_size %>%
+  filter(germline_include == FALSE) %>%
   summarise(target_size = sum(target_size, na.rm = TRUE))
 ############################################
 
@@ -229,7 +233,7 @@ write_csv(results_genes_germline_wider,
 gzip(paste0("results/CancerPanel_Germline_MergeAnalysesSources.", creation_date, ".csv"),
   overwrite = TRUE)
 
-write_csv(results_genes_germline_wider,
+write_csv(results_genes_somatic_wider,
   file = paste0("results/CancerPanel_Somatic_MergeAnalysesSources.",
     creation_date,
     ".csv"),
