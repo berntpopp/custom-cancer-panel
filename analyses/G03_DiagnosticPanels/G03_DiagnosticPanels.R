@@ -143,7 +143,7 @@ url <- (diagnostic_panels %>%
 cegat_tumor_syndromes_panel <- read_html(url)
 
 cegat_tumor_syndromes_panel_genes <- cegat_tumor_syndromes_panel %>%
-    html_nodes(xpath = '//i[contains(text(),"Gene Directory")]//following::em') %>%
+    html_nodes(xpath = '//h2[contains(text(),"Gene Directory")]//following::em') %>%
   html_text() %>%
   tibble(`Genes` = .) %>%
   separate_rows(., Genes, convert = TRUE) %>%

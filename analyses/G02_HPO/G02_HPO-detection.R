@@ -90,6 +90,9 @@ if (check_file_age("phenotype", "data/", 1)) {
 
   gzip(phenotype_hpoa_filename,
     overwrite = TRUE)
+
+  # update filename
+  phenotype_hpoa_filename <- get_newest_file("phenotype", "data/")
 }
 
 if (check_file_age("omim_genemap2", "data/", 1)) {
@@ -107,6 +110,9 @@ if (check_file_age("omim_genemap2", "data/", 1)) {
 
   gzip(omim_genemap2_filename,
     overwrite = TRUE)
+
+  # update filename
+  omim_genemap2_filename <- get_newest_file("omim_genemap2", "data/")
 }
 ############################################
 
