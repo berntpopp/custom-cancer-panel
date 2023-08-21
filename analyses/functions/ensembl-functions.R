@@ -255,3 +255,47 @@ transcript_length_from_ensembl <- function(transcript_ids, reference = "hg19") {
 
   return(transcript_id_list_return)
 }
+
+
+#' Retrieve SNP positions from rsIDs using Ensembl
+#'
+#' This function retrieves the position and chromosome information for the given SNP rsIDs.
+#' The information is obtained from the specified reference genome via the Ensembl API.
+#'
+#' @param rs_ids A vector or tibble containing the SNP rsIDs.
+#' @param reference The reference genome to use. Valid values are "hg38" and "hg19" (default: "hg38").
+#'
+#' @return A tibble with the SNP rsIDs and their corresponding chromosome, chrom_start, and chrom_end.
+#'
+#' @examples
+#' rs_ids <- c("rs1234567", "rs9876543", "rs11223344")
+#' snp_position_from_rs(rs_ids, reference = "hg38")
+#'
+#' @export
+snp_position_from_rs <- function(rs_ids, reference = "hg38") {
+  # transform rs_ids to tibble
+  rs_ids_list <- as_tibble(rs_ids) %>%
+    dplyr::select(snp_id = value)
+
+  # define mart
+  if (reference == "hg19") {
+    mart <- useEnsembl("snp", dataset = "hsapiens_snp", GRCh = "37")
+  } else {
+    mart <- useEnsembl("snp", dataset = "hsapiens_snp")
+  }
+
+  # get snp position and chromosome
+  snps <- getBM(attributes=c("refsnp_id",
+                    "chr_name",
+                    "chrom_start",
+                    "chrom_end"),
+      filters = "snp_filter", values = rs_ids_list$snp_id, mart = mart, uniqueRows = TRUE) %>%
+      tibble() %>%
+      filter(!str_detect(chr_name, pattern = "^H"))
+
+  # join back to rs_ids_list
+  snps_return <- left_join(rs_ids_list, snps, by = c("snp_id" = "refsnp_id")) %>%
+    dplyr::select(chr = chr_name, chrom_start, chrom_end)
+
+  return(snps_return)
+}
