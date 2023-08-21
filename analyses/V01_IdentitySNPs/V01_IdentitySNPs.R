@@ -11,6 +11,7 @@ library(webdriver) # needed for headless browsing
 library("R.utils")  ## gzip downloaded and result files
 library(pdftools) # needed for pdf files
 library(magrittr) # needed for list extraction
+library(biomaRt)    ## needed to get gene coordinates
 ############################################
 
 
@@ -34,9 +35,8 @@ options(scipen = 999)
 
 ############################################
 # load global functions
-# hgnc functions
-source("../functions/hgnc-functions.R", local = TRUE)
 source("../functions/phantomjs-functions.R", local = TRUE)
+source("../functions/ensembl-functions.R", local = TRUE)
 ############################################
 
 
@@ -135,6 +135,7 @@ idt_xgen_human_id_hybridization_panel <- read_tsv((identity_panels %>% filter(pa
 
 ###############
 # 5) idt_xgen_sample_id_amplicon_panel
+# TODO: fix file download
 idt_xgen_sample_id_amplicon_panel <- read_html((identity_panels %>% filter(panel_name == "idt_xgen_sample_id_amplicon_panel"))$filename_download) %>%
   html_nodes(xpath = '//table[contains(@class,"table-condensed")]') %>%
   html_table() %>%
