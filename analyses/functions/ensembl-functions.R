@@ -1,3 +1,5 @@
+require(biomaRt)    ## needed to get gene coordinates)
+
 #### This file holds analyses functions for the ensembl database name using biomart
 
 #' Retrieve gene coordinates in BED format from gene symbols
@@ -285,17 +287,22 @@ snp_position_from_rs <- function(rs_ids, reference = "hg38") {
   }
 
   # get snp position and chromosome
-  snps <- getBM(attributes=c("refsnp_id",
-                    "chr_name",
-                    "chrom_start",
-                    "chrom_end"),
-      filters = "snp_filter", values = rs_ids_list$snp_id, mart = mart, uniqueRows = TRUE) %>%
+  snps <- getBM(attributes = c("refsnp_id",
+            "chr_name",
+            "chrom_start",
+            "chrom_end",
+            "allele",
+            "minor_allele"),
+        filters = "snp_filter",
+        values = list(refsnp_id = rs_ids_list$snp_id),
+        mart = mart,
+        uniqueRows = TRUE) %>%
       tibble() %>%
       filter(!str_detect(chr_name, pattern = "^H"))
 
   # join back to rs_ids_list
   snps_return <- left_join(rs_ids_list, snps, by = c("snp_id" = "refsnp_id")) %>%
-    dplyr::select(chr = chr_name, chrom_start, chrom_end)
+    dplyr::select(chr = chr_name, chrom_start, chrom_end, allele, minor_allele)
 
   return(snps_return)
 }
