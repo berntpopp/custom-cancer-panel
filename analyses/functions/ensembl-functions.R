@@ -306,3 +306,46 @@ snp_position_from_rs <- function(rs_ids, reference = "hg38") {
 
   return(snps_return)
 }
+
+
+#' Retrieve exon coordinates with padding from gene symbols
+#'
+#' This function retrieves the exon coordinates for the given gene symbols. 
+#' The coordinates are obtained from the specified reference genome and are padded based on the input.
+#'
+#' @param gene_symbols A vector or tibble containing the gene symbols.
+#' @param reference The reference genome to use (default: "hg19").
+#' @param padding The number of bases to pad on each side of the exon start/end (default: 0).
+#'
+#' @return A tibble with the gene symbols and their padded exon coordinates.
+#'
+#' @examples
+#' gene_symbols <- c("ARID1B", "GRIN2B", "NAA10")
+#' exon_coordinates_from_symbol(gene_symbols, reference = "hg19", padding = 10)
+#'
+#' @export
+exon_coordinates_from_symbol <- function(gene_symbols, reference = "hg19", padding = 0) {
+
+  gene_symbol_list <- as_tibble(gene_symbols) %>%
+    dplyr::select(hgnc_symbol = value)
+
+  # define mart
+  if (reference == "hg19") {
+    mart <- useMart("ensembl", host = "grch37.ensembl.org")
+    mart <- useDataset("hsapiens_gene_ensembl", mart)
+  } else {
+    mart <- useMart("ensembl", host = "ensembl.org")
+    mart <- useDataset("hsapiens_gene_ensembl", mart)
+  }
+
+  attributes <- c("external_gene_name", "ensembl_gene_id", "chromosome_name", "exon_chrom_start", "exon_chrom_end")
+  filters <- c("hgnc_symbol")
+  values <- list(hgnc_symbol = gene_symbol_list$hgnc_symbol)
+
+  exon_coordinates <- getBM(attributes=attributes, filters=filters, values=values, mart=mart) %>%
+    filter(!str_detect(chromosome_name, pattern = "^H")) %>%
+    mutate(padded_start = exon_chrom_start - padding, padded_end = exon_chrom_end + padding) %>%
+    dplyr::select(external_gene_name, chromosome_name, padded_start, padded_end)
+
+  return(exon_coordinates)
+}
