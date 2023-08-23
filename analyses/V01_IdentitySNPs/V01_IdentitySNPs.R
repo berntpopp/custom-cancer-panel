@@ -148,8 +148,8 @@ idt_xgen_sample_id_amplicon_panel <- read_html((identity_panels %>% filter(panel
 ###############
 # bind all panels
 # add source column and merge the sources into one column separated by ";"
-# add hg38 coordinates using snp_position_from_rs function
-# then unnest the hg38_coordinates column
+# add hg19/hg38 coordinates using snp_position_from_rs function
+# then unnest the coordinates columns
 identity_panels_all <- bind_rows(pengelly_panel,
   eurogentest_ngs_panel,
   ampliseq_illumina_panel,
@@ -161,9 +161,12 @@ identity_panels_all <- bind_rows(pengelly_panel,
   dplyr::select(snp, source) %>%
   unique() %>%
   arrange(snp) %>%
-  mutate(hg38_coordinates =
-    snp_position_from_rs(snp)) %>%
-  unnest(hg38_coordinates)
+  mutate(hg19 =
+      snp_position_from_rs(snp, reference = "hg19"),
+    hg38 =
+      snp_position_from_rs(snp)) %>%
+  unnest(c(hg19, hg38),
+    names_sep = "_")
 ############################################
 
 

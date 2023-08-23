@@ -43,17 +43,20 @@ ethnicity_snps <- read_excel("data/ethnicity_snps.xlsx")
 ############################################
 ## generate standardized snp list
 # add source column and merge the sources into one column separated by ";"
-# add hg38 coordinates using snp_position_from_rs function
-# then unnest the hg38_coordinates column
+# add hg19/hg38 coordinates using snp_position_from_rs function
+# then unnest the coordinates columns
 ethnicity_snps_panel <- ethnicity_snps %>%
   group_by(rs_id) %>%
   summarise(source = paste0(group, collapse = "; ")) %>%
   dplyr::select(snp = rs_id, source) %>%
   unique() %>%
   arrange(snp) %>%
-  mutate(hg38_coordinates =
-    snp_position_from_rs(snp)) %>%
-  unnest(hg38_coordinates)
+  mutate(hg19 =
+      snp_position_from_rs(snp, reference = "hg19"),
+    hg38 =
+      snp_position_from_rs(snp)) %>%
+  unnest(c(hg19, hg38),
+    names_sep = "_")
 ############################################
 
 
