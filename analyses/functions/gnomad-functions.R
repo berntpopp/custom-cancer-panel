@@ -184,3 +184,90 @@ get_multiple_gene_data_from_gnomad <- function(ensemble_ids) {
   # Return the combined tibble
   return(gene_data)
 }
+
+
+#' Fetch Variant rsids Data from gnomAD GraphQL API
+#'
+#' This function takes a variant in VCF format and a dataset identifier as input,
+#' makes a POST request to the gnomAD GraphQL API, and returns the rsids for the variant as a tibble.
+#'
+#' @param vcf_variant A character string representing the variant in VCF format (e.g., "1-55516888-G-GA").
+#' @param dataset A character string representing the dataset identifier (e.g., "gnomad_r2_1").
+#'
+#' @return A tibble with columns for each field returned by the API. This includes
+#'         fields such as variant_id and rsids.
+#'
+#' @examples
+#' \dontrun{
+#'   variant_data <- get_variant_rsids_from_gnomad("1-55516888-G-GA", "gnomad_r2_1")
+#'   print(variant_data)
+#' }
+#'
+#' @export
+get_variant_rsids_from_gnomad <- function(vcf_variant, dataset) {
+
+  # API URL
+  api_url <- "https://gnomad.broadinstitute.org/api/"
+
+  # Request Body
+  body <- list(
+    query = paste0(
+      '{
+        variant(variantId: "', vcf_variant, '", dataset: ', dataset, ') {
+          variant_id
+          rsids
+        }
+      }'
+    )
+  )
+
+  # Send POST request
+  response <- POST(api_url, body = body, encode = "json")
+
+  # Check if request was successful
+  if (response$status_code == 200) {
+    # Parse the JSON response
+    data <- fromJSON(content(response, "text", encoding = "UTF-8"))
+
+    # Convert the nested list to a flat data frame
+    df <- as.data.frame(data$data$variant)
+
+    # Convert the data frame to a tibble and return
+    return(as_tibble(df))
+  } else {
+    stop("Request failed with status code ", response$status_code)
+  }
+}
+
+
+#' Fetch Variant rsids Data from gnomAD GraphQL API for multiple variants
+#'
+#' This function takes a vector of variants in VCF format and a dataset identifier as input,
+#' makes a POST request for each variant
+#' to the gnomAD GraphQL API, and returns the rsids for the variants as a tibble.
+#'
+#' @param vcf_variants A character vector representing the variants in VCF format.
+#' @param dataset A character string representing the dataset identifier (e.g., "gnomad_r2_1").
+#'
+#' @return A tibble with rows for each variant and columns for each field returned by the API.
+#'         This includes fields such as variant_id and rsids.
+#'
+#' @examples
+#' \dontrun{
+#'   variant_data <- get_multiple_variant_rsids_from_gnomad(c("1-55516888-G-GA", "1-204502514-T-TTCTGAAACAGGG"), "gnomad_r2_1")
+#'   print(variant_data)
+#' }
+#'
+#' @export
+get_multiple_variant_rsids_from_gnomad <- function(vcf_variants, dataset) {
+  # Use purrr::map to iterate over vcf_variants and get a list of tibbles
+  list_of_tibbles <- purrr::map(vcf_variants, function(variant) {
+    get_variant_rsids_from_gnomad(variant, dataset)
+  })
+  
+  # Use purrr::reduce to bind all tibbles into a single tibble
+  variant_data <- purrr::reduce(list_of_tibbles, dplyr::bind_rows)
+
+  # Return the combined tibble
+  return(variant_data)
+}
