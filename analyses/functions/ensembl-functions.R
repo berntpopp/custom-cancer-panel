@@ -315,7 +315,7 @@ snp_position_from_rs <- function(rs_ids, reference = "hg38") {
 #'
 #' @param gene_symbols A vector or tibble containing the gene symbols.
 #' @param reference The reference genome to use (default: "hg19").
-#' @param padding The number of bases to pad on each side of the exon start/end (default: 0).
+#' @param padding The number of bases to pad on each side of the exon start/end (default: 20).
 #'
 #' @return A tibble with the gene symbols and their padded exon coordinates.
 #'
@@ -324,7 +324,7 @@ snp_position_from_rs <- function(rs_ids, reference = "hg38") {
 #' exon_coordinates_from_symbol(gene_symbols, reference = "hg19", padding = 10)
 #'
 #' @export
-exon_coordinates_from_symbol <- function(gene_symbols, reference = "hg19", padding = 0) {
+exon_coordinates_from_symbol <- function(gene_symbols, reference = "hg19", padding = 20) {
 
   gene_symbol_list <- as_tibble(gene_symbols) %>%
     dplyr::select(hgnc_symbol = value)
